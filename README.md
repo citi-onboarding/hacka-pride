@@ -1,2 +1,4 @@
-# ong-cactus
-Repositório de uma página única para a organização Cactus
+# pridehack
+Repositório de uma página única para o evento pridehack
+
+
