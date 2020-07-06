@@ -1,5 +1,4 @@
 const keystone = require('keystone');
-
 const { Types } = keystone.Field;
 
 const Ticket = new keystone.List('Link Ingresso');

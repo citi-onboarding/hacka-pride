@@ -1,10 +1,10 @@
-
 const cors = require('cors');
 const path = require('path');
 
 const apiTicket = require('../views/Ticket');
 const apiNotice = require('../views/Notice');
 const apiBanner = require('../views/Banner');
+const apiPremio = require('../views/Premio');
 
 exports = module.exports = function (app) {
   app.use(cors())
@@ -15,6 +15,7 @@ exports = module.exports = function (app) {
   
   app.get('/api/ticket', apiTicket.getTicket)
   app.get('/api/notice', apiNotice.getNotice)
+  app.get('/api/goal', apiPremio.getPremio)
   app.get('/api/banner', apiBanner.getBanner)
   //replica a de cima
 
