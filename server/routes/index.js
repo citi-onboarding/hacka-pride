@@ -23,8 +23,6 @@ exports = module.exports = function (app) {
   app.get('/api/ticket', apiTicket.getTicket)
   app.get('/api/goal', apiPremio.getPremio)
   app.get('/api/social', apiHackaPride.getHackaPride)
-  app.get('/api/company', apiCiti.getCiti)
-  app.get('/api/company', apiParceiros.getParceiros)
   app.get('/api/collaborators', apiCollaborators.getCollaborators)
   //replica a de cima
 
