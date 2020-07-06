@@ -12,13 +12,13 @@ This is a repository to manage the building of one-page website made for HackPri
 1. You need to clone this repository by using the command `git clone https://github.com/citi-onboarding/pride-hack`
 
 2. To install all the dependencies you must:
-2.1 Run the command `npm install`or `yarn install` on both folders `/client` and `server`
+   - 2.1 Run the command `npm install`or `yarn install` on both folders `/client` and `server`
 
 3. Writing the necessary scripts
-3.1 Create an empty folder called `public` at `/server/`
-3.2 If you´re using Windows Go to `/client/package.json`
-3.3 In `Debug`section you need to paste `"serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public"`
-3.4 Run the command `npm run serverwin`
+   - 3.1 Create an empty folder called `public` at `/server/`
+   - 3.2 If you´re using Windows Go to `/client/package.json`
+   - 3.3 In `Debug`section you need to paste `"serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public"`
+   - 3.4 Run the command `npm run serverwin`
 
 4. Copy `.env-template` and fill the empty sections
 
