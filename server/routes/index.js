@@ -1,5 +1,5 @@
-const path = require('path');
 const cors = require('cors');
+const path = require('path');
 
 const apiTicket = require('../views/Ticket');
 const apiNotice = require('../views/Notice');
@@ -20,3 +20,4 @@ exports = module.exports = function (app) {
   });
  
 } 
+
