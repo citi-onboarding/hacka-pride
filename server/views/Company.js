@@ -3,7 +3,7 @@ const Citi = keystone.list('Citi').model;
 const Parceiros = keystone.list('Parceiros').model;
 
 const handlers = {
-  getCiti: async function (req, res) {
+  getCompany: async function (req, res) {
     
     const objeto = {
       dataCiti: {},
@@ -30,10 +30,8 @@ const handlers = {
       objeto.dataCiti = data;
     
     });
-
     
     await res.status(200).send(objeto);
-    
   
   }
 }
