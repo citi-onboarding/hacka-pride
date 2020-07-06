@@ -6,8 +6,7 @@ const apiBanner = require('../views/Banner');
 const apiPremio = require('../views/Premio');
 const apiTicket = require('../views/Ticket');
 const apiHackaPride = require('../views/HackaPride');
-const apiCiti = require('../views/Citi');
-const apiParceiros = require('../views/Parceiros');
+const apiCollaborators = require('../views/Collaborators');
 
 
 
@@ -26,6 +25,7 @@ exports = module.exports = function (app) {
   app.get('/api/social', apiHackaPride.getHackaPride)
   app.get('/api/company', apiCiti.getCiti)
   app.get('/api/company', apiParceiros.getParceiros)
+  app.get('/api/collaborators', apiCollaborators.getCollaborators)
   //replica a de cima
 
 	app.get('*', (req, res) => {
