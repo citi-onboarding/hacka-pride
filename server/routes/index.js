@@ -1,20 +1,22 @@
 const path = require('path');
-const keystone = require('keystone');
 const cors = require('cors');
 
-const Example = keystone.list('Examples');
+const apiTicket = require('../views/Ticket');
+const apiNotice = require('../views/Notice');
 
-module.exports = (app) => {
-  app.use(cors());
+exports = module.exports = function (app) {
+  app.use(cors())
+  
+  app.get('/', function (req, res) {
+		res.sendFile.join(__dirname, '../public/index.html')
+  })
+  
+  app.get('/api/ticket', apiTicket.getTicket)
+  app.get('/api/notice', apiNotice.getNotice)
+  //replica a de cima
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+	app.get('*', (req, res) => {
+    res.redirect('/');
   });
-
-  app.get('/api/examples', (req, res) => {
-    Example.model.find((err, items) => {
-      if (err) return res.apiError('database error', err);
-      res.send(items);
-    });
-  });
-};
+ 
+} 
