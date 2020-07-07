@@ -1,5 +1,5 @@
-# HackPride
-This is a repository to manage the building of one-page website made for HackPride 2020.
+# Hacka Pride
+This is a repository to manage the building of one-page website made for Hacka Pride 2020.
 
 ## Running the project locally
 ***
@@ -27,14 +27,14 @@ This is a repository to manage the building of one-page website made for HackPri
 ## Contribution Structure
 ***
 * ### Adding a new funcionality
-1. Create a new branch by using the name `feature/<name of the branch>: title`
+1. Create a new branch by using the name `feature/<name of the branch>` and commit `feature(<name of the branch>): title`
 2. Make commits about your contribution using the template 
 3. Make a pull request
 
 * ### Debug or optimize a funcionality
-1. To debug, create a new branch by using the name `bugfix/<name of the branch>: title` and make the two other steps mentioned above
+1. To debug, create a new branch by using the name `bugfix/<name of the branch>` and make the two other steps mentioned above
 
-2. To optimize, create a new branch by using the name `bugfix/<name of the branch>: title` and make the two other steps mentioned above
+2. To optimize, create a new branch by using the name `hotfix/<name of the branch>` and make the two other steps mentioned above
 
 ## Software description
 ***
@@ -49,10 +49,10 @@ This is a repository to manage the building of one-page website made for HackPri
 not made yet
 
 * ### Endpoints (API's)
-   - `/api/ticket`: send the ticket link to the database at
+   - `/api/ticket`: send the ticket link to the database
    - `/api/banner`: send a title, a description and a DataTime (UTC) to the database
    - `/api/notice`: send the notice to the database
    - `/api/goal`: send a local, a data, a goal and the prizes to the database
    - `/api/social`: send a name and the links to the social media to the databse
-   - `/api/collaborators`: 
-   - `/api/company`: 
+   - `/api/collaborators`: send image, name, social media and a description to the datase about staffs and mentors
+   - `/api/company`: send description and social media about CITi and name and logo about the partners
