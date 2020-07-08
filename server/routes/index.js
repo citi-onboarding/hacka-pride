@@ -1,5 +1,6 @@
 const path = require('path');
 const cors = require('cors');
+const router = require('express').Router();
 
 const apiNotice = require('../views/Notice');
 const apiCompany = require('../views/Company'); 
@@ -8,6 +9,7 @@ const apiCollaborators = require('../views/Collaborators');
 const apiPremio = require('../views/Premio');
 const apiTicket = require('../views/Ticket');
 const apiBanner = require('../views/Banner');
+const mailController = require('../src/mailController');
 
 exports = module.exports = function (app) {
   app.use(cors())
@@ -23,9 +25,12 @@ exports = module.exports = function (app) {
   app.get('/api/social', apiHackaPride.getHackaPride)
   app.get('/api/collaborators', apiCollaborators.getCollaborators)
   app.get('/api/goal', apiPremio.getPremio)
+  app.post('/api/contato', mailController)
 
 	app.get('*', (req, res) => {
     res.redirect('/');
   });
  
+  //router.route('/form').post(mailController);
+
 }
