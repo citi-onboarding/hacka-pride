@@ -2,14 +2,14 @@ const path = require('path');
 const cors = require('cors');
 const router = require('express').Router();
 
-const apiNotice = require('../views/Notice');
-const apiCompany = require('../views/Company'); 
-const apiHackaPride = require('../views/HackaPride');
-const apiCollaborators = require('../views/Collaborators');
-const apiPremio = require('../views/Premio');
-const apiTicket = require('../views/Ticket');
-const apiBanner = require('../views/Banner');
-const mailController = require('../src/mailController');
+const apiNotice = require('../controllers/Notice');
+const apiCompany = require('../controllers/Company'); 
+const apiHackaPride = require('../controllers/HackaPride');
+const apiCollaborators = require('../controllers/Collaborators');
+const apiPremio = require('../controllers/Premio');
+const apiTicket = require('../controllers/Ticket');
+const apiBanner = require('../controllers/Banner');
+const mailController = require('../controllers/mailController');
 
 exports = module.exports = function (app) {
   app.use(cors())

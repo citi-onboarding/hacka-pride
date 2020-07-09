@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-const mailServer = require('./mailServer');
+const mailServer = require('../utils/mailServer');
 
 const sendMail = async (req, res, next) => {
   try {
