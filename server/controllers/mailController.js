@@ -3,11 +3,11 @@ const mailServer = require('../utils/mailServer');
 
 const sendMail = async (req, res, next) => {
   try {
-    const { name, email, subject, message } = req.body;
+    const { name, phone, subject, message } = req.body;
 
     const body = `
       Nome: ${name}
-      Email: ${email}
+      Telefone: ${phone}
       Mensagem: ${message}`;
 
     await mailServer({
