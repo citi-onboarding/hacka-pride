@@ -1,5 +1,5 @@
 const keystone = require('keystone');
-const HackaPride = keystone.list('Link para o edital').model;
+const HackaPride = keystone.list('HackaPride').model;
 const handlers = {
   getHackaPride: function (req, res) {
 

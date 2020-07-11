@@ -2,13 +2,16 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const HackaPride = new keystone.List('HackaPride')
+const HackaPride = new keystone.List('HackaPride', {
+    map: { name: 'key' },
+    nocreate: true,
+    nodelete: true,
+});
 
 HackaPride.add({
-    nome: { type: Types.Text, initial: true, required: true, index: true, noedit: true, },
+    key: { type: Types.Text, value: 'HackaPride', noedit: true },
     instagram: { type: Types.Text, initial: true, required: true, index: true, },
     facebook: { type: Types.Text, initial: true, required: true, index: true, },
-    link: { type: Types.Text, required: true, initial: true, index: true, }
 });
 
 HackaPride.register();

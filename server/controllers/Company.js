@@ -5,10 +5,7 @@ const Parceiros = keystone.list('Parceiros').model;
 const handlers = {
   getCompany: async function (req, res) {
     
-    const objeto = {
-      dataCiti: {},
-      dataParceiros: {},
-    }
+    const objeto = {}
 
   
     await Parceiros.find().exec(function (err, data) {

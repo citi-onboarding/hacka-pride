@@ -6,10 +6,7 @@ const Mentors = keystone.list('Mentors').model;
 const handlers = {
   getCollaborators: async function (req, res) {
 
-    const objeto = {
-      dataStaffs: {},
-      dataMentors: {},
-    }
+    const objeto = {}
 
     
      await  Staff.find().exec(function (err, data) {
