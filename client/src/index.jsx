@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {
   Example,
+  Navbar,
   Contact,
   Footer,
 } from './components';
@@ -10,7 +11,8 @@ import {
 function App() {
   return (
     <section className="app">
-      <Contact />
+      <Navbar />
+      <Contact  style="margin-top: 200px;"/>
       <Footer />
     </section>
   );
