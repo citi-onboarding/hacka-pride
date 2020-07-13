@@ -18,11 +18,10 @@ function Navbar() {
     return (
     <div>
         <nav className="tipo-1">
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></link>
             <div className="logo"></div>
-            <ul className="options">
+            <ul for="nav-shaddow" className="options">
                 <li className="text">
-                    <a className="normal-text">Informações</a>
+                    <a for="nav-shaddow" className="normal-text">Informações</a>
                 </li>
                 <li className="text">
                     <a className="normal-text">Convidados</a>
