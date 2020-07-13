@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 
 import {
   Example,
+  Contact,
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Example />
+      <Contact />
     </section>
   );
 }

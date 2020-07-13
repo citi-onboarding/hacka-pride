@@ -9,7 +9,7 @@ function Contact() {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
-    const [dadosciti, setDadosciti] = useState('');
+    const [dados, setDados] = useState('');
     const [link, setLink] = useState('');
     const [subject, setSubject] = React.useState(0);
 
@@ -51,8 +51,8 @@ function Contact() {
       };
 
       const loadInfo = async () => {
-        const res = await axios.get('http://localhost:3001/api/company');
-        setDadosciti(res.data);
+        const res = await axios.get('http://localhost:3001/api/social');
+        setDados(res.data);
         const link = await axios.get('http://localhost:3001/api/ticket');
         setLink(link.data);
       };
@@ -68,10 +68,10 @@ function Contact() {
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"></link>
                 <section className="info-contact">
                     <div className="logo"></div>
-                    {dadosciti && (  
+                    {dados && (  
                     <div className="social-media">
-                            <a href={dadosciti.bancoCiti[0]?.instagram} target="_blank"><button className="logo-insta"></button></a>
-                            <a href={dadosciti.bancoCiti[0]?.facebook} target="_blank"><button className="logo-face"></button></a>
+                            <a href={dados[0]?.instagram} target="_blank"><button className="logo-insta"></button></a>
+                            <a href={dados[0]?.facebook} target="_blank"><button className="logo-face"></button></a>
                     </div>
                     )}
                     {link && (
