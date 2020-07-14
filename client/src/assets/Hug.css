@@ -1,8 +1,6 @@
 svg {
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    justify-self: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
+    width: 25%;
+    height: auto;
+    top: 65%;
+    left: 81%;
 }

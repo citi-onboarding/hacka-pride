@@ -7,6 +7,7 @@ import {
   Guests,
   Contact,
   Footer,
+  Test
 } from './components';
 
 function App() {

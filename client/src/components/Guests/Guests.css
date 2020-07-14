@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 810px;
+    overflow-y: hidden;
 }
 
 .all-content h2 {
@@ -34,6 +35,7 @@
 .informs-reverse {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 10%;
 }
 
 .desc {
@@ -90,4 +92,10 @@
 
 .mentors {
     margin-left: 12%;
+}
+
+.svg-design {
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 50%;
 }

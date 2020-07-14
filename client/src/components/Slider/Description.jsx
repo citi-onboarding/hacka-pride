@@ -4,10 +4,11 @@ import React from "react";
 import "./Slider.css";
 
 function Description(props) {
+    
   return (
-    <div>    
+    <>    
         <section className="photo-shoot">
-            <img className="photo-size" src={props.img}></img>
+            <img className="photo-size" src={props.img} />
         </section>
         <section className="description">
             <section className="details">
@@ -20,7 +21,7 @@ function Description(props) {
                 </section>
             </section>
         </section>
-  </div>
+  </>
   );
 }
 

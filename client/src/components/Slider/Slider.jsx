@@ -7,7 +7,6 @@ import Description from './Description';
 
 import './Slider.css';
 
-
 //props are on Description.jsx
 //this component will be rendering the informations to staffs slider
 function Slide() {
@@ -23,6 +22,10 @@ function Slide() {
         loadDados();
       }, []);
 
+      function Vey () {
+        
+      }
+
       const settings = {
         arrows: true,
         dots: true,
@@ -33,26 +36,27 @@ function Slide() {
         autoplay: true,
         speed: 700,
         autoplaySpeed: 4000,
-        cssEase: "linear"
+        cssEase: "linear",
+        mobileFirst: true,
       };
-
     return (
-        <Slider className="slider-pattern" {...settings}>
-          {dadosStaffs.dataStaffs?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
+        <Slider className="slider-pattern slick-initialized" {...settings}>
+          
+        {dadosStaffs.dataStaffs?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
             return (    
-                <Description
-                  key={_id}
-                  img={Foto.url}
-                  Nome={Nome}
-                  Descrição={Descrição}
-                  linkFB={FacebookURL}
-                  linkIG={InstagramURL}
-                  linkIN={LinkedInURL}
-                  />
-              );
-            })}
-            <span>oi</span>
-        </Slider>
+              <Description 
+                key={_id}
+                img={Foto.url}
+                Nome={Nome}
+                Descrição={Descrição}
+                linkFB={FacebookURL}
+                linkIG={InstagramURL}
+                linkIN={LinkedInURL}
+                />
+            );
+          })}
+          <span className="hide">z</span>
+          </Slider>
     );
 };
 

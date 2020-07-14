@@ -51,7 +51,7 @@ function Mentors() {
                   />
               );
             })}
-            <span>oi</span>
+            <span className="hide">oi</span>
         </Slider>
     );
 };
