@@ -38,7 +38,7 @@ function Slide() {
 
     return (
         <Slider className="slider-pattern" {...settings}>
-          {dadosStaffs.dataStaffs?.map(({index, _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
+          {dadosStaffs.dataStaffs?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
             return (    
                 <Description
                   key={_id}

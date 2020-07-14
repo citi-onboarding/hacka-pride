@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import axios from 'axios';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Description from './Description';
+import Description from '../Slider/Description';
 
-import './Slider.css';
+import '../Slider/Slider.css';
 
 
 //props are on Description.jsx
@@ -38,7 +38,7 @@ function Mentors() {
 
     return (
         <Slider className="slider-pattern" {...settings}>
-          {dadosMentors.dataMentors?.map(({index, _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
+          {dadosMentors.dataMentors?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
             return (    
                 <Description
                   key={_id}

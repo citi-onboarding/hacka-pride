@@ -1,0 +1,8 @@
+svg {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-self: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+}

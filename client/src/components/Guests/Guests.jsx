@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import Hug from '../../assets/Hug'
 
+import Mentors from '../Mentors';
 import Slider from '../Slider';
 
 import './Guests.css';
@@ -17,6 +18,16 @@ function Guests() {
                     </div>
                     <div className="staffs">
                         <Slider />
+                    </div>
+            </div>
+
+            <div className="informs informs-reverse">
+                    <div className="desc desc-mentors">
+                        <h6>Mentores</h6>
+                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                    </div>
+                    <div className="mentors">
+                        <Mentors />
                     </div>
             </div>
         </div>
