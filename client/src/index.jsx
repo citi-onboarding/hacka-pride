@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import {
   Example,
+  Slider,
+  Guests,
   Contact,
   Footer,
 } from './components';
@@ -10,8 +12,7 @@ import {
 function App() {
   return (
     <section className="app">
-      <Contact />
-      <Footer />
+      <Guests />
     </section>
   );
 }

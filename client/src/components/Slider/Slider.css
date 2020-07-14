@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.slider-pattern {
+    display: flex;
+    flex-direction: row;
+    width: 452px;
+    height: 195px;
+
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.photo-shoot {
+    position: absolute;
+    z-index: 0;
+    width: 249px;
+    height: 195px;
+}
+
+.photo-size {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+    height: 150px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 0;
+    margin-top: 13px;
+    margin-left: 205px; 
+    box-shadow: 3px 3px 6px #B3B3B3;
+    border-radius: 3px 10px 10px 3px;
+}
+
+.details {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 140px;
+    height: 130px;
+    margin-left: 10%;
+}
+
+.details p {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 105px;
+    height: 26.0019px;
+    border: none;
+}
+
+.logo-image {
+    width: 27px;
+    height: 27px;
+}
+
+.linkedin {
+    background: url('../../assets/LinkedIn.svg') transparent;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    background: url('../../assets/Instagram.svg');
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background: url('../../assets/Facebook.svg');
+    background-repeat: no-repeat;
+}
+
+ .slick-next {
+     background: url('../../assets/next.svg');
+     background-repeat: no-repeat;
+     width: 15px;
+     height: 30px;
+     font-family: none;
+     color: none;
+     opacity: none;
+ }
+
+ .slick-next:hover {
+     display: block;
+ }
+
+ .slick-prev {
+    background: url('../../assets/prev.svg');
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 0px;
+}
+
+.slick-arrow {
+    margin-right: 12px;
+    font-size: 0px;
+    color: none;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #2D65F8;
+}
+
+.slick-dots li button:before {
+    font-size: 9px;
+    color: #2D65F8;
+}
