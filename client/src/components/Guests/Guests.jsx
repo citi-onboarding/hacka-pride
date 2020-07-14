@@ -30,7 +30,7 @@ function Guests() {
                         <Mentors />
                     </div>
             </div>
-            <Hug className="svg-design" />
+            <Hug />
         </div>
     )
 }

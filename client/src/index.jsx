@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <section className="app">
-      <Guests />
+      <Slider />
     </section>
   );
 }

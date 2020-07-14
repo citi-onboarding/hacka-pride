@@ -140,3 +140,55 @@
 li .slick-active .slick-initialized {
     visibility: hidden;
 }
+
+@media (max-width: 1100px) {
+    .slider-pattern {
+        width: 293px;
+        height: 154px;
+    }
+
+    .photo-size {
+        width: 80%;
+        height: 80%;
+        margin-left: 1px;
+    }
+
+    .description {
+        width: 150px;
+        height: 132px;
+        margin-left: 140px;
+    }
+
+    .details {
+        width: 122px;
+        height: 90px;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+
+    .slick-next,
+    .slick-prev {
+        background: none;
+    }
+
+    .logo-image {
+        width: 23px;
+        height: 23px;
+    }
+
+    .facebook {
+        background: url('../../assets/Facebook-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .instagram {
+        background: url('../../assets/Instagram-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .linkedin {
+        background: url('../../assets/LinkedIn-mobile.svg');
+    }
+}

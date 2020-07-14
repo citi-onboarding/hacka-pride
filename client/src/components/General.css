@@ -11,6 +11,6 @@ body {
     flex-direction: column;
 }
 
-html, body {
+body {
     overflow-x: hidden;
   }

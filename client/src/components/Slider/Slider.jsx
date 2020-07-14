@@ -38,6 +38,14 @@ function Slide() {
         autoplaySpeed: 4000,
         cssEase: "linear",
         mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              arrows: false,
+            },
+          },
+        ],
       };
     return (
         <Slider className="slider-pattern slick-initialized" {...settings}>

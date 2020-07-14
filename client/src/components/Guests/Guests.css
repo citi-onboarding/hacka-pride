@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 .all-content {
     display: flex;
     flex-direction: column;
@@ -17,7 +21,7 @@
     opacity: 1;
 
     text-align: left;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .informs {
@@ -30,6 +34,7 @@
     max-width: 1400px;
     margin: 0 auto;
     margin-top: 84px;
+    z-index: 7;
 }
 
 .informs-reverse {
@@ -92,10 +97,4 @@
 
 .mentors {
     margin-left: 12%;
-}
-
-.svg-design {
-    position: absolute;
-    align-self: flex-end;
-    margin-top: 50%;
 }
