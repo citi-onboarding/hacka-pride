@@ -15,9 +15,9 @@ function Description(props) {
                 <p>{props.Nome}</p>
                 <p>{props.Descrição}</p>
                 <section className="logos">
-                    <a href={props.linkFB}><div className="logo-image facebook"></div></a>
-                    <a href={props.linkIG}><div className="logo-image instagram"></div></a>
-                    <a href={props.linkIN}><div className="logo-image linkedin"></div></a>
+                    <a href={props.linkFB} target="_blank"><div className="logo-image facebook"></div></a>
+                    <a href={props.linkIG} target="_blank"><div className="logo-image instagram"></div></a>
+                    <a href={props.linkIN} target="_blank"><div className="logo-image linkedin"></div></a>
                 </section>
             </section>
         </section>

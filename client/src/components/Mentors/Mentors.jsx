@@ -37,6 +37,10 @@ function Mentors() {
       };
 
     return (
+      <div className="fix-content">
+          <button className="prev" onClick={() => {
+            document.querySelector(".slick-next.slick-arrow").click();
+          }}></button>
         <Slider className="slider-pattern" {...settings}>
           {dadosMentors.dataMentors?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
             return (    
@@ -53,6 +57,10 @@ function Mentors() {
             })}
             <span className="hide">oi</span>
         </Slider>
+        <button className="prox" onClick={() => {
+            document.querySelector(".slick-next.slick-arrow").click();
+          }}></button>
+      </div>
     );
 };
 

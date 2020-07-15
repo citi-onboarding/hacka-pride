@@ -7,6 +7,7 @@ import Description from './Description';
 
 import './Slider.css';
 
+
 //props are on Description.jsx
 //this component will be rendering the informations to staffs slider
 function Slide() {
@@ -48,6 +49,10 @@ function Slide() {
         ],
       };
     return (
+      <div className="fix-content">
+          <button className="prev" onClick={() => {
+            document.querySelector(".slick-next.slick-arrow").click();
+          }}></button>
         <Slider className="slider-pattern slick-initialized" {...settings}>
           
         {dadosStaffs.dataStaffs?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
@@ -63,8 +68,12 @@ function Slide() {
                 />
             );
           })}
-          <span className="hide">z</span>
+          <span className="hide">oi</span>
           </Slider>
+          <button className="prox" onClick={() => {
+            document.querySelector(".slick-next.slick-arrow").click();
+          }}></button>
+        </div>
     );
 };
 

@@ -11,7 +11,7 @@ function Guests() {
         <div className="all-content">
             <h2>Convidados do HackaPride</h2>
             <div className="informs">
-                    <div className="desc">
+                    <div className="desc first">
                         <h6>Staffs</h6>
                         <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
                     </div>
