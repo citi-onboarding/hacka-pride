@@ -12,8 +12,6 @@ function App() {
   return (
     <section className="app">
       <Navbar />
-      <Contact  style="margin-top: 200px;"/>
-      <Footer />
     </section>
   );
 }

@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .tipo-1 {
     display: flex;
@@ -176,7 +173,7 @@ nav a .normal-button:hover {
     }
 
     .painting {
-        background: url('../../assets/Ilustração\ -\ Navbar.svg');
+        background: url('./Ilustração\ -\ Navbar.svg');
         background-repeat: no-repeat;
         align-self: flex-start;
         width: 285px;

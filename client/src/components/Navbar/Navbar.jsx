@@ -17,7 +17,9 @@ function Navbar() {
 
     return (
     <div>
-        <nav className="tipo-1">
+        <nav className="tipo-1" onClick={() => {
+          document.querySelector('.tipo-1').style.boxShadow = '0px 2px 6px #B3B3B3';
+        }}>
             <div className="logo"></div>
             <ul for="nav-shaddow" className="options">
                 <li className="text">
@@ -42,16 +44,16 @@ function Navbar() {
         <input id="nav-toggle" type="checkbox"></input>
             <div class="links">
                 <div className="text-mobile">
-                    <a><h3>Informações sobre o evento</h3></a>
+                    <a href="#"><h3>Informações sobre o evento</h3></a>
                 </div>
                 <div className="text-mobile">
-                    <a><h3>Convidados do Hacka Pride</h3></a>
+                    <a href="#"><h3>Convidados do Hacka Pride</h3></a>
                 </div>
                 <div className="text-mobile">
                     <a href="#"><h3>Tire suas dúvidas conosco</h3></a>
                 </div>
                 {resp && (
-                <div className="text-mobile"><a href={resp[0]?.IngressoURL}><button className="button-mobile">Ingresso</button></a></div>
+                <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank"><button className="button-mobile">Ingresso</button></a></div>
                 )}
                 <div className="painting"></div>
             </div>
