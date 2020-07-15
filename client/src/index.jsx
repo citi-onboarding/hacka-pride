@@ -5,13 +5,13 @@ import {
   Example,
   Contact,
   Footer,
+  Partners
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Contact />
-      <Footer />
+      <Partners />
     </section>
   );
 }

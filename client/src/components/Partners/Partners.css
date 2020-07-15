@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.all-partners-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 520px;
+    height: 130px;
+    margin-left: 10%;
+}
+
+.text-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.text-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: regular;
+    text-align: left;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 820px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.each-logo {
+    width: 118px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.each-logo:hover {
+    box-shadow: 0px 3px 6px #CCCCCC;
+}
+
+.company-citi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 467px;
+    height: 193px;
+    margin: 0 auto;
+}
+
+.citi-logo-image {
+    width: 136px;
+    height: 81px;
+    background: url('./CITi\ Logo.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.divisoria {
+    width: 338px;
+    height: 2px;
+    background: url('./Divisória.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.company-citi p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+
+    width: 467px;
+    height: 54px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flag-svg {
+    background: url('./Ilustração\ -\ Parceiros.svg');
+    background-repeat: no-repeat;
+
+    width: 380px;
+    height: 440px;
+    position: absolute;
+    left: -100px;
+    top: 400px;
+}
+
+.align-every {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
