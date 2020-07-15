@@ -7,13 +7,13 @@ import {
   Guests,
   Contact,
   Footer,
-  Test
+  Test,
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Slider />
+      <Guests />
     </section>
   );
 }

@@ -27,6 +27,7 @@
     z-index: 0;
     width: 249px;
     height: 195px;
+    margin-left: 3px;
 }
 
 .photo-size {
@@ -83,22 +84,22 @@
 }
 
 .linkedin {
-    background: url('../../assets/LinkedIn.svg') transparent;
+    background: url('./LinkedIn.svg') transparent;
     background-repeat: no-repeat;
 }
 
 .instagram {
-    background: url('../../assets/Instagram.svg');
+    background: url('./Instagram.svg');
     background-repeat: no-repeat;
 }
 
 .facebook {
-    background: url('../../assets/Facebook.svg');
+    background: url('./Facebook.svg');
     background-repeat: no-repeat;
 }
 
  .slick-next {
-     background: url('../../assets/next.svg');
+     background: url('./next.svg');
      background-repeat: no-repeat;
      width: 15px;
      height: 30px;
@@ -112,7 +113,7 @@
  }
 
  .slick-prev {
-    background: url('../../assets/prev.svg');
+    background: url('./prev.svg');
     background-repeat: no-repeat;
     width: 15px;
     height: 30px;
@@ -156,7 +157,7 @@ li .slick-active .slick-initialized {
     .description {
         width: 150px;
         height: 132px;
-        margin-left: 140px;
+        margin-left: 133px;
     }
 
     .details {
@@ -179,16 +180,16 @@ li .slick-active .slick-initialized {
     }
 
     .facebook {
-        background: url('../../assets/Facebook-mobile.svg');
+        background: url('./Facebook-mobile.svg');
         background-repeat: no-repeat;
     }
 
     .instagram {
-        background: url('../../assets/Instagram-mobile.svg');
+        background: url('./Instagram-mobile.svg');
         background-repeat: no-repeat;
     }
 
     .linkedin {
-        background: url('../../assets/LinkedIn-mobile.svg');
+        background: url('./LinkedIn-mobile.svg');
     }
 }
