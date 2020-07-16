@@ -30,13 +30,21 @@ function Partners() {
                 ))}
             </div>
             <div className="align-every">
+            {partners.dataCiti?.map(({ site, facebook, instagram, descrição }) => (
                 <div className="company-citi">
                         <div className="citi-logo-image"></div>
                         <div className="divisoria"></div>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.</p>
+                        <p className="desc">{descrição}</p>
+                        <div className="svg-company">
+                            <a href={facebook} target="_blank" alt="facebook citi"><div className="face"></div></a>
+                            <a href={instagram} target="_blank" alt="instagram citi"><div className="insta"></div></a>
+                            <a href={site} target="_blank" alt="site citi"><div className="web"></div></a>
+                            <p className="website">citi.org.br</p>
+                        </div>
                 </div>
-                <div className="flag-svg"></div>
+                ))}
             </div>
+                <div className="flag-svg"></div>
         </div>
     );
 }
