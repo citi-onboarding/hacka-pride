@@ -164,10 +164,12 @@
 @media (max-width: 1000px) {
     .all-partners-content {
         margin: 0 auto;
+        width: 300px;
     }
 
     .text-section h2 {
         font-size: 14px;
+        width: 295px
     }
 
     .each-logo {
@@ -188,17 +190,13 @@
         width: 100%;
         margin-left: 0;
         margin: 0 auto;
+        width: 295px;
     } 
-
-    .text-section h2 {
-        margin-left: 10%;
-    }
 
     .text-section p {
         width: 295px;
         margin-top: 15px;
         font-size: 14px;
-        margin-left: 10%;
     }
 
     .company-citi {
