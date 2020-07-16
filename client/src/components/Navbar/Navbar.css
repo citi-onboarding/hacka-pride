@@ -99,7 +99,7 @@ nav a .normal-button:hover {
     display: none;
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 1024px) {
     #nav-toggle {
         position: absolute;
         z-index: 11;
