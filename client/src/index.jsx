@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {
   Example,
+  Navbar,
   Slider,
   Guests,
   Contact,
@@ -13,7 +14,7 @@ import {
 function App() {
   return (
     <section className="app">
-      <Guests />
+      <Navbar />
     </section>
   );
 }
