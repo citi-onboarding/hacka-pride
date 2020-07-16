@@ -8,13 +8,14 @@ import {
   Guests,
   Contact,
   Footer,
+  Partners,
   Test,
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Navbar />
+      <Partners />
     </section>
   );
 }
