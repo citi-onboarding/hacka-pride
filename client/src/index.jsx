@@ -4,8 +4,11 @@ import ReactDOM from 'react-dom';
 import {
   Example,
   Navbar,
+  Slider,
+  Guests,
   Contact,
   Footer,
+  Test,
 } from './components';
 
 function App() {

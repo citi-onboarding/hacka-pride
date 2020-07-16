@@ -10,3 +10,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+  #root {
+      overflow-x: hidden;
+  }

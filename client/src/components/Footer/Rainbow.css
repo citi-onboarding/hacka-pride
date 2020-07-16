@@ -1,4 +1,4 @@
-svg {
+.rainboww {
     position: absolute;
     z-index: 0;
     display: flex;
@@ -8,13 +8,13 @@ svg {
 }
 
 @media (max-width: 860px) {
-    svg {
+    .rainboww {
         width: 150%;
     }
 }
 
 @media (max-width: 560px) {
-    svg {
+    .rainboww {
         width: 250%;
     }
 }
