@@ -1,5 +1,5 @@
 import React from 'react';
-import Rainbow from '../../assets/Rainbow'
+import Rainbow from './Rainbow';
 
 import './Footer.css';
 import '../General.css';
