@@ -173,7 +173,7 @@ select option {
 .logo {
     width: 264px;
     height: 63px;
-    background: url('../../assets/Logo.svg');
+    background: url('./Logo.svg');
     background-repeat: no-repeat;
 }
 
@@ -187,7 +187,7 @@ select option {
 .logo-insta {
     width: 41px;
     height: 41px;
-    background: url('../../assets/Instagram.svg');
+    background: url('./Instagram.svg');
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
@@ -196,7 +196,7 @@ select option {
 .logo-face {
     width: 41px;
     height: 41px;
-    background: url('../../assets/Facebook.svg');
+    background: url('./Facebook.svg');
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;

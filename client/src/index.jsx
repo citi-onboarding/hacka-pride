@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 
 import {
   Example,
+  Navbar,
+  Slider,
+  Guests,
   Contact,
   Footer,
-  Partners
+  Partners,
+  Test,
 } from './components';
 
 function App() {
