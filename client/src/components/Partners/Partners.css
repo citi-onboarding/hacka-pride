@@ -45,16 +45,23 @@
     margin-top: 30px;
 }
 
+.div-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 166px;
+    height: 85px;
+    margin-top: 40px;
+    align-items: center;
+}
+
 .each-logo {
     width: 118px;
     height: auto;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
     align-self: center;
 }
 
-.each-logo:hover {
+.div-size:hover {
     box-shadow: 0px 3px 6px #CCCCCC;
 }
 
@@ -161,6 +168,12 @@
     opacity: 1;
 }
 
+@media (max-width: 1160px) {
+    .flag-svg {
+        left: -200px;
+    }
+}
+
 @media (max-width: 1000px) {
     .all-partners-content {
         margin: 0 auto;
@@ -172,10 +185,15 @@
         width: 295px
     }
 
-    .each-logo {
+    .div-size {
         width: 78px;
-        height: auto;
+        height: 59px;
         align-self: center;
+    }
+
+    .each-logo {
+        width: 85px;
+        height: auto;
     }
 
     .partners-logos {

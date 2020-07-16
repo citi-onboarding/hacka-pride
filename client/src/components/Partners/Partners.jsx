@@ -26,7 +26,9 @@ function Partners() {
             </div>
             <div className="partners-logos">
                 {partners.dataParceiros?.map(({ _id, nome, imagens }) => (
-                <img className="each-logo" key={_id} src={imagens[0]?.url} alt={nome}></img>
+                <div className="div-size">
+                    <img className="each-logo" key={_id} src={imagens[0]?.url} alt={nome}></img>
+                </div>
                 ))}
             </div>
             <div className="align-every">
