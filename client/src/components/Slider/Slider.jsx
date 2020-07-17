@@ -23,10 +23,6 @@ function Slide() {
         loadDados();
       }, []);
 
-      function Vey () {
-        
-      }
-
       const settings = {
         arrows: true,
         dots: true,
@@ -34,7 +30,7 @@ function Slide() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         speed: 700,
         autoplaySpeed: 4000,
         cssEase: "linear",

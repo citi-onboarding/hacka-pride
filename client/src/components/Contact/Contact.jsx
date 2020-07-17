@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 import './Contact.css';
 import '../General.css';
 
+
+
+toast.configure()
 
 function Contact() {
     const [name, setName] = useState('');
@@ -37,13 +42,23 @@ function Contact() {
     };
 
     const sendMaile = async () => {
-            await axios.post('http://localhost:3001/api/contato', {
+        try{
+                const db = await axios.post('http://localhost:3001/api/contato', {
                 "name": name,
                 "phone": phone,
                 "subject": subject,
                 "message": message
             });
-    };
+         if(db.status === 200) { toast('Enviado'); }
+        } catch(err) {
+            toast.warn('Error');
+        }
+        };
+
+        const notify = (event) => {
+            sendMaile();
+            event.preventDefault();
+        }
 
       const handleSubmit = (event) => {
         event.preventDefault();
@@ -67,10 +82,10 @@ function Contact() {
             <div className="contact">
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"></link>
                 <section className="info-contact">
-                    <div className="logo"></div>
+                    <div className="logo-contact"></div>
                     {dados && (  
                     <div className="social-media">
-                            <a href={dados[0]?.instagram} target="_blank"><button className="logo-insta"></button></a>
+                            <a href={dados[0]?.instagram} target="_blank" rel="noopener noreferrer"><button className="logo-insta"></button></a>
                             <a href={dados[0]?.facebook} target="_blank"><button className="logo-face"></button></a>
                     </div>
                     )}
@@ -105,7 +120,7 @@ function Contact() {
                                 <textarea required="true" value={message} onChange={(event) => messageChange(event)}></textarea>
                                 <label>Messagem</label>
                             </div>
-                            <button type="submit" value="submit">Enviar</button>
+                            <button type="submit" value="submit" onClick={notify}>Enviar</button>
                         </form>
                     </div>
                 </section>
