@@ -30,7 +30,7 @@ function Mentors() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         speed: 700,
         autoplaySpeed: 4000,
         cssEase: "linear"
@@ -40,7 +40,7 @@ function Mentors() {
       <div className="fix-content">
           <button className="prev" onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();
-          }}></button>
+          }} alt="botao para voltar slider"></button>
         <Slider className="slider-pattern" {...settings}>
           {dadosMentors.dataMentors?.map(({ _id, Nome, Descrição, FacebookURL, InstagramURL, LinkedInURL, Foto }) => {
             return (    
@@ -59,7 +59,7 @@ function Mentors() {
         </Slider>
         <button className="prox" onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();
-          }}></button>
+          }} alt="botao para avançar slider"></button>
       </div>
     );
 };

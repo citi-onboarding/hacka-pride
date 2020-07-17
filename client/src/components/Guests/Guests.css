@@ -12,6 +12,10 @@
     overflow-y: hidden;
 }
 
+.position-guests {
+    margin-top: 100px;
+}
+
 .all-content h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
