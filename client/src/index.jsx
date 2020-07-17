@@ -7,15 +7,19 @@ import {
   Slider,
   Guests,
   Contact,
-  Footer,
   Partners,
+  Footer,
   Test,
 } from './components';
 
 function App() {
   return (
     <section className="app">
+      <Navbar />
+      <Guests />
       <Partners />
+      <Contact />
+      <Footer />
     </section>
   );
 }

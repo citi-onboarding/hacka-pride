@@ -13,34 +13,41 @@ function Navbar() {
   
     useEffect(() => {
       loadExamples();
+      const nav = document.querySelector('.tipo-1');
+      window.onscroll = function () {
+          var top = window.scrollY;
+          if (top >= 100){
+              nav.classList.add('box-sombra')
+          } else {
+              nav.classList.remove('box-sombra');
+          }
+      }
     }, []);
 
     return (
     <div>
-        <nav className="tipo-1" onClick={() => {
-          document.querySelector('.tipo-1').style.boxShadow = '0px 2px 6px #B3B3B3';
-        }}>
+        <nav className="tipo-1" alt="navbar">
             <div className="logo"></div>
             <ul for="nav-shaddow" className="options">
                 <li className="text">
-                    <a for="nav-shaddow" className="normal-text">Informações</a>
+                    <a for="nav-shaddow" className="normal-text" alt="informações">Informações</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text">Convidados</a>
+                    <a className="normal-text" alt="convidados">Convidados</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text">Parceiros</a>
+                    <a className="normal-text" alt="parceiros">Parceiros</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text">Contato</a>
+                    <a className="normal-text" alt="contato">Contato</a>
                 </li>
                 {resp && (
-                <li className="text"><a href={resp[0]?.IngressoURL} target="_blank"><button className="normal-button">Ingresso</button></a></li>
+                <li className="text"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="normal-button">Ingresso</button></a></li>
                 )}
             </ul>
         </nav>
 
-        <nav class="tipo-2">
+        <nav class="tipo-2" alt="navbar">
         <input id="nav-toggle" type="checkbox"></input>
             <div class="links">
                 <div className="text-mobile">
@@ -53,9 +60,9 @@ function Navbar() {
                     <a href="#"><h3>Tire suas dúvidas conosco</h3></a>
                 </div>
                 {resp && (
-                <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank"><button className="button-mobile">Ingresso</button></a></div>
+                <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="button-mobile">Ingresso</button></a></div>
                 )}
-                <div className="painting"></div>
+                <div className="painting" alt="imagem com duas pessoas coloridas"></div>
             </div>
             <div className="logo logo-2"></div>
             <label for="nav-toggle" class="icon-burguer">

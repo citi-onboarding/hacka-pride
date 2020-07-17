@@ -99,6 +99,10 @@ nav a .normal-button:hover {
     display: none;
 }
 
+.box-sombra {
+    box-shadow: 0px 2px 6px #B3B3B3;
+}
+
 @media screen and (max-width: 1024px) {
     #nav-toggle {
         position: absolute;
