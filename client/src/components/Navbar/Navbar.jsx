@@ -13,13 +13,20 @@ function Navbar() {
   
     useEffect(() => {
       loadExamples();
+      const nav = document.querySelector('.tipo-1');
+      window.onscroll = function () {
+          var top = window.scrollY;
+          if (top >= 100){
+              nav.classList.add('box-sombra')
+          } else {
+              nav.classList.remove('box-sombra');
+          }
+      }
     }, []);
 
     return (
     <div>
-        <nav className="tipo-1" onClick={() => {
-          document.querySelector('.tipo-1').style.boxShadow = '0px 2px 6px #B3B3B3';
-        }}>
+        <nav className="tipo-1">
             <div className="logo"></div>
             <ul for="nav-shaddow" className="options">
                 <li className="text">
