@@ -49,9 +49,9 @@ function Contact() {
                 "subject": subject,
                 "message": message
             });
-         if(db.status === 200) { toast('Enviado'); }
+         if(db.status === 200) { toast('Mensagem enviada!'); }
         } catch(err) {
-            toast.warn('Error');
+            toast.warn('Erro ao enviar, tente novamente!');
         }
         };
 
@@ -99,7 +99,7 @@ function Contact() {
                 <section className="submit-message">
                     <h2>Nos mande uma mensagem</h2>
                     <div className="box">
-                        <form onSubmit={(event) => handleSubmit(event)}>
+                        <form onSubmit={(event) => handleSubmit(event)} required="true">
                             <div>
                                 <input type="text" required="true" value={name} onChange={(event) => nameChange(event)}></input>
                                 <label>Nome</label>
