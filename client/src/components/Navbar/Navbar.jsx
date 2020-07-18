@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { url } from '../../apiURL';
+import url from '../../apiURL';
 
 import './Navbar.css';
 
-function Navbar() {
+function Navbar(props) {
     const [resp, setResp] = useState([]);
 
     const loadExamples = async () => {
-      const res = await axios.get(`${url}/api/ticket`);
+      const res = await axios.get(`${url.url}/api/ticket`);
       setResp(res.data);
     };
   
@@ -34,13 +34,13 @@ function Navbar() {
                     <a for="nav-shaddow" className="normal-text" alt="informações">Informações</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text" alt="convidados">Convidados</a>
+                    <a className="normal-text" alt="convidados" href="#guests">Convidados</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text" alt="parceiros">Parceiros</a>
+                    <a className="normal-text" alt="parceiros" href="#partners">Parceiros</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text" alt="contato">Contato</a>
+                    <a className="normal-text" alt="contato" href="#contact">Contato</a>
                 </li>
                 {resp && (
                 <li className="text"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="normal-button">Ingresso</button></a></li>
@@ -55,10 +55,10 @@ function Navbar() {
                     <a href="#"><h3>Informações sobre o evento</h3></a>
                 </div>
                 <div className="text-mobile">
-                    <a href="#"><h3>Convidados do Hacka Pride</h3></a>
+                    <a href="#guests"><h3>Convidados do Hacka Pride</h3></a>
                 </div>
                 <div className="text-mobile">
-                    <a href="#"><h3>Tire suas dúvidas conosco</h3></a>
+                    <a href="#contact" for="nav-toggle"><h3>Tire suas dúvidas conosco</h3></a>
                 </div>
                 {resp && (
                 <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="button-mobile">Ingresso</button></a></div>

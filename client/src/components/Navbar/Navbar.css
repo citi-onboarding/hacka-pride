@@ -125,6 +125,7 @@ nav a .normal-button:hover {
         box-shadow: 0px 3px 6px #00000029;
         background-color: #FFFFFF;
         z-index: 10;
+        top: -2px;
     }
 
     .logo-2 {
@@ -170,7 +171,7 @@ nav a .normal-button:hover {
         background: #ffffff;
         flex-direction: column;
         width: auto;
-        height: 92%;
+        height: 95%;
         margin-top: 70%;
         bottom: 120%;
         transition: all .5s ease-in-out;
