@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { url } from '../../apiURL';
 
 import './Partners.css';
 import '../General.css';
@@ -8,7 +9,7 @@ function Partners() {
     const [partners, setPartners] = useState('');
 
     const dataPartners = async () => {
-        const resp = await axios.get('http://localhost:3001/api/company');
+        const resp = await axios.get(`${url}/api/company`);
         setPartners(resp.data);
       };
     

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { url } from '../../apiURL';
 
 import './Contact.css';
 import '../General.css';
@@ -43,7 +44,7 @@ function Contact() {
 
     const sendMaile = async () => {
         try{
-                const db = await axios.post('http://localhost:3001/api/contato', {
+                const db = await axios.post(`${url}/api/contato`, {
                 "name": name,
                 "phone": phone,
                 "subject": subject,
@@ -66,9 +67,9 @@ function Contact() {
       };
 
       const loadInfo = async () => {
-        const res = await axios.get('http://localhost:3001/api/social');
+        const res = await axios.get(`${url}/api/social`);
         setDados(res.data);
-        const link = await axios.get('http://localhost:3001/api/ticket');
+        const link = await axios.get(`${url}/api/ticket`);
         setLink(link.data);
       };
 

@@ -4,6 +4,7 @@ import axios from 'axios';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Description from '../Slider/Description';
+import { url } from '../../apiURL';
 
 import '../Slider/Slider.css';
 
@@ -15,7 +16,7 @@ function Mentors() {
     const [dadosMentors, setDados] = useState([]);
     
     const loadDados = async () => {
-        const res = await axios.get('http://localhost:3001/api/collaborators');
+        const res = await axios.get(`${url}/api/collaborators`);
         setDados(res.data);
       };
 
