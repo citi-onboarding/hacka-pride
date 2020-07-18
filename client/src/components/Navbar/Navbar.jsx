@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { url } from '../../apiURL';
 
 import './Navbar.css';
 
@@ -7,7 +8,7 @@ function Navbar() {
     const [resp, setResp] = useState([]);
 
     const loadExamples = async () => {
-      const res = await axios.get('http://localhost:3001/api/ticket');
+      const res = await axios.get(`${url}/api/ticket`);
       setResp(res.data);
     };
   

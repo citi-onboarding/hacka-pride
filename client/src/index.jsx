@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
-  Example,
   Navbar,
   Slider,
   Guests,
   Contact,
   Partners,
   Footer,
-  Test,
 } from './components';
 
 function App() {
