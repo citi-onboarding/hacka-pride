@@ -14,3 +14,11 @@ body {
   #root {
       overflow-x: hidden;
   }
+
+  a {
+      text-decoration: none;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }

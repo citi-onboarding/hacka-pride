@@ -12,6 +12,7 @@
     z-index: 1;
     margin: 0 auto;
     max-width: 1400px;
+    margin-top: 10%;
 }
 
 /* SUBMIT MESSAGE SECTION CSS */
@@ -253,7 +254,7 @@ select option {
     }
     
     .contact {
-        margin-top: 20%;
+        margin-top: 90%;
         display: flex;
         flex-direction: column;
         align-content: center;

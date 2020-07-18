@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.all-partners-content {
+.all-partner-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1400px;
+    margin-top: 10%;
 }
 
 .text-section {
@@ -115,7 +116,7 @@
     height: 440px;
     position: absolute;
     left: -100px;
-    top: 400px;
+    top: 1400px;
     transition: .3s ease-out;
     z-index: -1;
 }
@@ -170,18 +171,25 @@
 
 @media (max-width: 1160px) {
     .flag-svg {
-        top: 500px;
+        top: 1500px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .flag-svg {
+        top: 1500px;
     }
 }
 
 @media (max-width: 1000px) {
-    .all-partners-content {
+    .all-partner-content {
         margin: 0 auto;
         width: 300px;
+        margin-top: 55%;
     }
 
     .text-section h2 {
-        font-size: 14px;
+        font-size: 21px;
         width: 295px
     }
 
@@ -244,7 +252,7 @@
         width: 250px;
         height: 305px;
         left: -60px;
-        top: 910px;
+        top: 1870px;
     }
 }
 
@@ -254,6 +262,16 @@
     }
 
     .flag-svg {
-        top: 1000px;
+        top: 1840px;
+    }
+
+    .all-partner-content {
+        margin-top: 58%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .all-partner-content {
+        margin: 0 auto;
     }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { url } from '../../apiURL';
+import url from '../../apiURL';
 
 import './Contact.css';
 import '../General.css';
@@ -44,7 +44,7 @@ function Contact() {
 
     const sendMaile = async () => {
         try{
-                const db = await axios.post(`${url}/api/contato`, {
+                const db = await axios.post(`${url.url}/api/contato`, {
                 "name": name,
                 "phone": phone,
                 "subject": subject,
@@ -67,9 +67,9 @@ function Contact() {
       };
 
       const loadInfo = async () => {
-        const res = await axios.get(`${url}/api/social`);
+        const res = await axios.get(`${url.url}/api/social`);
         setDados(res.data);
-        const link = await axios.get(`${url}/api/ticket`);
+        const link = await axios.get(`${url.url}/api/ticket`);
         setLink(link.data);
       };
 
@@ -79,7 +79,7 @@ function Contact() {
     
     return(
 <div class="all">
-        <section className="contact-box" alt="seção de contato">
+        <section className="contact-box" alt="seção de contato" id="contact">
             <div className="contact">
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"></link>
                 <section className="info-contact">
