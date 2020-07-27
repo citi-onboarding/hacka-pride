@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.all-information-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.all-information-content .description-www p {
+    max-width: 750px;
+}
+
+.calendar-svg {
+    background: url('./Calendar.svg');
+    background-repeat: no-repeat;
+    width: 25.629px;
+    height: 24px;
+}
+
+.description-www {
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+.local-svg {
+    background: url('./localization.svg');
+    background-repeat: no-repeat;
+    width: 15.73px;
+    height: 24px;
+}
+
+.all-information-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+
+    text-align: left;
+    margin-left: 10%;
+}
+
+.trophy-svg {
+    background: url('./Ilustração\ -\ Informações.svg');
+    background-repeat: no-repeat;
+    width: 394.385px;
+    height: 680.404px;
+    position: absolute;
+    left: -10px;
+    margin-top: 40px;
+}
