@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 145px;
-    margin-top: 100px;
+    margin-top: 70px;
     box-sizing: content-box;
 }
 
@@ -177,8 +177,119 @@
     opacity: 1;
 }
 
+.adjusting-display {
+    display: none;
+}
+
 @media (max-width: 1100px) {
     .each-prize {
         margin-left: 55px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .each-prize {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 967px) {
+    .trophy-svg {
+        top: 600px;
+    }
+
+    .data-content {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .each-prize {
+        flex-direction: column;
+        margin-top: 23px;
+    }
+
+    .first-prize,
+    .second,
+    .third {
+        width: 44px;
+        height: 41px;
+        background-color: #454FB4;
+        margin-left: 0px;
+        align-self: flex-start;
+    }
+
+    .display-number {
+        display: none;
+    }
+
+    .each-prize .second p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .each-prize .first-prize p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .each-prize .third p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .first-prize {
+        margin-top: 5px;
+    }
+
+    .third {
+        margin-top: 5px;
+    }
+
+    .mobile-position-number {
+        display: unset;
+        align-self: center;
+        margin-left: 33%;
+        width: 11px;
+        height: 34px;
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        font-size: 28px;
+    }
+
+    .description-www {
+        margin-top: 47px;
+    }
+}
+
+@media (max-width: 500px) {
+    .data-content {
+        max-width: 295px;
+    }
+
+    .font-styles,
+    .text-description {
+        font-size: 16px;
+    }
+
+    .all-information-content h2 {
+        font-size: 18px;
+        max-width: 140px;
+    }
+
+    .trophy-svg {
+        background: url('./Ilustração\ -\ InfoMobile.svg');
+        background-repeat: no-repeat;
+        width: 214px;
+        height: 369px;
+        top: 620px;
     }
 }
