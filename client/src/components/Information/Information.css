@@ -1,12 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 .all-information-content {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.all-information-content .description-www p {
-    max-width: 750px;
+.text-local-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data-content {
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.adjust-this {
+    margin-left: 5px;
+    margin-top: 18px;
 }
 
 .calendar-svg {
@@ -19,8 +31,6 @@
 .description-www {
     display: flex;
     flex-direction: column;
-    margin-left: 500px;
-    margin-top: 200px;
 }
 
 .local-svg {
@@ -50,4 +60,125 @@
     position: absolute;
     left: -10px;
     margin-top: 40px;
+}
+
+.alinhar-data {
+    margin-left: 10px;
+}
+
+.alinhar-local {
+    margin-left: 18px;
+}
+
+.text-description {
+    margin-top: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+}
+
+.font-styles {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #262626;
+    font-size: 21px;
+    opacity: 1;
+}
+
+.prizing {
+    margin-top: 40px;
+}
+
+.each-prize {
+    display: flex;
+    flex-direction: row;
+    margin-left: 145px;
+    margin-top: 100px;
+    box-sizing: content-box;
+}
+
+.second {
+    width: 152px;
+    height: 73px;
+    background-color: #454FB4;
+    align-self: flex-end;
+}
+
+.first-prize {
+    width: 152px;
+    height: 102px;
+    background-color: #454FB4;
+    margin-left: 2px;
+}
+
+.third {
+    width: 152px;
+    height: 43px;
+    background-color: #454FB4;
+    align-self: flex-end;
+    margin-left: 2px;
+}
+
+.each-position {
+    transform: translateX(48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.podium-first {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.podium-sec {
+    margin-top: 13px;
+    font-size: 35px;
+}
+
+.podium-third {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.prizing p {
+    text-align: center;
+    width: 130px;
+    margin-left: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.each-prize .second p {
+    margin-top: -100px;
+}
+
+.each-prize .first-prize p {
+    margin-top: -115px;
+}
+
+.each-prize .third p {
+    margin-top: -85px;
+}
+
+.prizing h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .each-prize {
+        margin-left: 55px;
+    }
 }
