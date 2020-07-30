@@ -10,29 +10,29 @@ function Banner() {
         <div className="all-banner-content">
             <div className="banner-illustration"></div>
             <div className="infos-banner">
-                <h1 className="title-banner">Lorem ipsum dolor sit amet, consetetur</h1>
+                <h1 className="title-banner">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h1>
                 <div className="timer-blocks">
                     <div className="pink-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number">76</h6>
+                            <h6 className="block-number correct-self">76</h6>
                             <p>dias</p>
                         </div>
                     </div>
                     <div className="yellow-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number">10</h6>
+                            <h6 className="block-number correct-margin">10</h6>
                             <p className="yellow-text">horas</p>
                         </div>
                     </div>
                     <div className="green-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number">28</h6>
+                            <h6 className="block-number correct-margin">28</h6>
                             <p>minutos</p>
                         </div>
                     </div>
                     <div className="blue-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number">04</h6>
+                            <h6 className="block-number adjust-number">04</h6>
                             <p>segundos</p>
                         </div>
                     </div>
