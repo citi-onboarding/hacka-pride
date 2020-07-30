@@ -11,7 +11,7 @@ const Premios = new keystone.List('Prêmios', {
 Premios.add({
     key: { type: Types.Text, value: 'Premios', noedit: true },
     local: { type: Types.Text, initial: true, required: true, index: true, },
-    data: { type: Types.Date, initial: true, required: true, index: true, },
+    data: { type: Types.Text, initial: true, required: true, index: true, },
     objetivo: { type: Types.Text, initial: true, required: true, index: true, },
     premio1: { type: Types.Text, initial: true, required: true, index: true, },
     premio2: { type: Types.Text, initial: true, required: true, index: true, },
