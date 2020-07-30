@@ -4,8 +4,10 @@ import Partners from './Partners';
 import Navbar from './Navbar';
 import Slider from './Slider';
 import Guests from './Guests';
+import Banner from './Banner';
 
 export {
+  Banner,
   Slider,
   Guests,
   Contact,
