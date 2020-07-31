@@ -6,7 +6,6 @@ import './Banner.css';
 import '../General.css';
 
 let db = [];
-console.log(db);
 
 function Banner() {
     const [timerDays, setTimerDays] = useState('00');
@@ -19,7 +18,7 @@ function Banner() {
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('Oct 16, 2020 09:00:00').getTime();
+        const countdownDate = new Date(`${db[0]?.DataEvento}`).getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
