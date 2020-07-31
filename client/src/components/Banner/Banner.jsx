@@ -5,20 +5,21 @@ import url from '../../apiURL';
 import './Banner.css';
 import '../General.css';
 
+let db = [];
+console.log(db);
+
 function Banner() {
     const [timerDays, setTimerDays] = useState('00');
     const [timerHours, setTimerHours] = useState('00');
     const [timerMinutes, setTimerMinutes] = useState('00');
     const [timerSeconds, setTimerSeconds] = useState('00');
-    const [eventDate, setEventDate] = useState('');
+    const [eventDate, setEventDate] = useState([]);
     const [ingresso, setIngresso] = useState('');
 
     let interval = useRef();
-    
-    const timeNow = eventDate[0]?.DataEvento;
 
     const startTimer = () => {
-        const countdownDate = new Date(Date.parse(`${timeNow}`)).getTime();
+        const countdownDate = new Date('Oct 16, 2020 09:00:00').getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -37,7 +38,7 @@ function Banner() {
                 setTimerMinutes(minutes);
                 setTimerSeconds(seconds);
             }
-        }, 1);
+        }, 1000);
     };
 
     useEffect(() => {
@@ -47,20 +48,22 @@ function Banner() {
         }
     });
 
-    const getDB = async () => {
+    const getdatabaseinfo = async () => {
         const resp = await axios.get(`${url.url}/api/banner`);
         setEventDate(resp.data);
+        db = resp.data;
         const ingresso = await axios.get(`${url.url}/api/notice`);
         setIngresso(ingresso.data);
     };
 
     useEffect(() => {
-        getDB();
+        getdatabaseinfo();
       }, []);
 
     return (
         <div className="all-banner-content">
             <div className="banner-illustration"></div>
+            <div className="banner-people"></div>
             <div className="infos-banner">
                 {eventDate && ingresso && (
                 <>
@@ -68,25 +71,25 @@ function Banner() {
                 <div className="timer-blocks">
                     <div className="pink-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number correct-self">{timerDays}</h6>
+                            <h6 className="block-number correct-self">{(timerDays < 10) ? '0'+timerDays : timerDays}</h6>
                             <p>dias</p>
                         </div>
                     </div>
                     <div className="yellow-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number correct-margin">{timerHours}</h6>
+                            <h6 className="block-number correct-margin">{(timerHours < 10) ? '0'+timerHours : timerHours}</h6>
                             <p className="yellow-text">horas</p>
                         </div>
                     </div>
                     <div className="green-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number correct-margin">{timerMinutes}</h6>
+                            <h6 className="block-number correct-margin">{(timerMinutes < 10) ? '0'+timerMinutes : timerMinutes}</h6>
                             <p>minutos</p>
                         </div>
                     </div>
                     <div className="blue-block">
                         <div className="inside-block-content">
-                            <h6 className="block-number adjust-number">{timerSeconds}</h6>
+                            <h6 className="block-number adjust-number">{(timerSeconds < 10) ? '0'+timerSeconds : timerSeconds}</h6>
                             <p>segundos</p>
                         </div>
                     </div>

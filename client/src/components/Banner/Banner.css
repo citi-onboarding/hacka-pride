@@ -23,7 +23,7 @@
     margin-left: 163px;
     margin-top: 60px;
     width: 384px;
-    height: 480px;
+    height: 380px;
 }
 
 .timer-blocks {
@@ -178,16 +178,26 @@
 
 @media (max-width: 600px) {
     .banner-illustration {
-        background: url('./banner-mobile.svg');
+        background: url('./Arco-íris\ -\ Banner.svg');
         background-repeat: no-repeat;
         width: 335px;
         height: 265px;
+        top: 420px;
+    }
+
+    .banner-people {
+        background: url('./people\ -\ Banner.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 320px;
+        height: 203px;
         top: 400px;
+        right: 0px;
     }
 
     .infos-banner {
         width: 294px;
-        height: 400px;
+        height: 350px;
     }
 
     .timer-blocks {
@@ -255,7 +265,7 @@
     }
 
     .title-banner {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .banner-text {
