@@ -8,17 +8,17 @@ import '../General.css';
 let db = [];
 
 function Banner() {
-    const [timerDays, setTimerDays] = useState('00');
-    const [timerHours, setTimerHours] = useState('00');
-    const [timerMinutes, setTimerMinutes] = useState('00');
-    const [timerSeconds, setTimerSeconds] = useState('00');
-    const [eventDate, setEventDate] = useState([]);
+    const [timerDays, setTimerDays] = useState(0);
+    const [timerHours, setTimerHours] = useState(0);
+    const [timerMinutes, setTimerMinutes] = useState(0);
+    const [timerSeconds, setTimerSeconds] = useState(0);
+    const [eventDate, setEventDate] = useState([{DataEvento: new Date().toISOString()}]);
     const [ingresso, setIngresso] = useState('');
 
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date(`${db[0]?.DataEvento}`).getTime();
+        const countdownDate = new Date(`${eventDate[0]?.DataEvento}`).getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -50,10 +50,11 @@ function Banner() {
     const getdatabaseinfo = async () => {
         const resp = await axios.get(`${url.url}/api/banner`);
         setEventDate(resp.data);
-        db = resp.data;
         const ingresso = await axios.get(`${url.url}/api/notice`);
         setIngresso(ingresso.data);
     };
+
+    console.log(eventDate);
 
     useEffect(() => {
         getdatabaseinfo();
