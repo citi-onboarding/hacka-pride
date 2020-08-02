@@ -5,6 +5,7 @@ import {
   Banner,
   Navbar,
   Slider,
+  Information,
   Guests,
   Contact,
   Partners,
@@ -14,7 +15,9 @@ import {
 function App() {
   return (
     <section className="app">
+      <Navbar />
       <Banner />
+      <Information />
     </section>
   );
 }
