@@ -116,7 +116,7 @@
     height: 440px;
     position: absolute;
     left: -100px;
-    top: 1400px;
+    top: 2750px;
     transition: .3s ease-out;
     z-index: -1;
 }
@@ -177,7 +177,7 @@
 
 @media (max-width: 1080px) {
     .flag-svg {
-        top: 1500px;
+        top: 3000px;
     }
 }
 
@@ -273,5 +273,17 @@
 @media (min-width: 1400px) {
     .all-partner-content {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .all-partner-content {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 65%;
+    }
+
+    .flag-svg {
+        top: 3820px;
     }
 }

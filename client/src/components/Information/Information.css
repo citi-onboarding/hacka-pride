@@ -3,6 +3,7 @@
 .all-information-content {
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 250px;
 }
 
 .text-local-data {
@@ -78,6 +79,7 @@
     letter-spacing: 0;
     color: #262626;
     opacity: 1;
+    padding-right: 10px;
 }
 
 .font-styles {
@@ -271,6 +273,10 @@
 }
 
 @media (max-width: 500px) {
+    .all-information-content {
+        margin-top: 500px;
+    }
+
     .data-content {
         max-width: 295px;
     }
@@ -281,8 +287,8 @@
     }
 
     .all-information-content h2 {
-        font-size: 18px;
-        max-width: 140px;
+        font-size: 21px;
+        max-width: 180px;
     }
 
     .trophy-svg {
@@ -290,6 +296,6 @@
         background-repeat: no-repeat;
         width: 214px;
         height: 369px;
-        top: 620px;
+        top: 1620px;
     }
 }

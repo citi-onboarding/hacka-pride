@@ -15,6 +15,12 @@
     margin-top: 10%;
 }
 
+@media (max-width: 1024px) {
+    .contact {
+        margin-top: 25%;
+    }
+}
+
 /* SUBMIT MESSAGE SECTION CSS */
 
 .submit-message {

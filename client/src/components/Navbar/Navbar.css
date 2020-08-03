@@ -21,6 +21,7 @@
     z-index: 10;
     margin: 0 auto;
     margin-bottom: 5%;
+    top: -1px;
 }
 
 .logo {

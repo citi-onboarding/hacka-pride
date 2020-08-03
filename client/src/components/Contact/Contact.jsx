@@ -121,7 +121,7 @@ function Contact() {
                                 <textarea required="true" value={message} onChange={(event) => messageChange(event)}></textarea>
                                 <label alt="Mensagem">Messagem</label>
                             </div>
-                            <button type="submit" value="submit" onClick={notify} alt="enviar">Enviar</button>
+                            <button type="submit" value="submit" alt="enviar" onsubmit={notify}>Enviar</button>
                         </form>
                     </div>
                 </section>

@@ -18,6 +18,10 @@ function App() {
       <Navbar />
       <Banner />
       <Information />
+      <Guests />
+      <Partners />
+      <Contact />
+      <Footer />
     </section>
   );
 }

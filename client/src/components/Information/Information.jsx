@@ -23,7 +23,7 @@ function Information() {
 
 
     return (
-        <div className="all-information-content">
+        <div className="all-information-content" id="infos">
             <h2>Informações sobre o evento</h2>
             <div className="trophy-svg" alt="ilustração de arco-íris e um casal segurando troféu"></div>
             <section className="data-content">
