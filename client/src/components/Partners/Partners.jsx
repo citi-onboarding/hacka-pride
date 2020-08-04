@@ -44,10 +44,10 @@ function Partners() {
                             <a href={site} target="_blank" alt="site citi"><div className="web"></div></a>
                             <p className="website">citi.org.br</p>
                         </div>
+                        <div className="flag-svg"></div>
                 </div>
                 ))}
-            </div>
-                <div className="flag-svg"></div>
+            </div>        
         </div>
     );
 }

@@ -168,7 +168,7 @@
 
 @media (max-width: 1000px) {
     .banner-illustration {
-        top: 450px;
+        top: 550px;
     }
 
     .banner-illustration {
@@ -179,6 +179,12 @@
         margin: 0 auto;
     }
 }
+
+/* @media (max-width: 990px) {
+    .banner-illustration {
+        top: 550px;
+    }
+} */
 
 @media (max-width: 600px) {
     .banner-illustration {

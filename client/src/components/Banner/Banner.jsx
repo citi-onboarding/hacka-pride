@@ -54,8 +54,6 @@ function Banner() {
         setIngresso(ingresso.data);
     };
 
-    console.log(eventDate);
-
     useEffect(() => {
         getdatabaseinfo();
       }, []);

@@ -117,8 +117,11 @@
     position: absolute;
     left: -100px;
     top: 2750px;
-    transition: .3s ease-out;
-    z-index: -1;
+}
+
+.flag-svg:hover {
+    background: url('./hover.svg');
+    top: 2741px;
 }
 
 .align-every {
@@ -171,13 +174,14 @@
 
 @media (max-width: 1160px) {
     .flag-svg {
-        top: 1500px;
+        top: 2800px;
     }
 }
 
 @media (max-width: 1080px) {
     .flag-svg {
-        top: 3000px;
+        top: 2950px;
+        left: -150px
     }
 }
 
@@ -252,27 +256,7 @@
         width: 250px;
         height: 305px;
         left: -60px;
-        top: 1870px;
-    }
-}
-
-@media (max-width: 340px) {
-    .partners-logos {
-        width: 290px;
-    }
-
-    .flag-svg {
-        top: 1840px;
-    }
-
-    .all-partner-content {
-        margin-top: 58%;
-    }
-}
-
-@media (min-width: 1400px) {
-    .all-partner-content {
-        margin: 0 auto;
+        top: 4400px;
     }
 }
 
@@ -285,5 +269,26 @@
 
     .flag-svg {
         top: 3820px;
+    }
+}
+
+@media (max-width: 340px) {
+    .partners-logos {
+        width: 290px;
+    }
+
+    .flag-svg {
+        top: 3780px;
+    }
+
+    .all-partner-content {
+        margin-top: 65%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .all-partner-content {
+        margin: 0 auto;
+        margin-top: 100px;
     }
 }

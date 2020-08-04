@@ -50,7 +50,7 @@ function Contact() {
                 "subject": subject,
                 "message": message
             });
-         if(db.status === 200) { toast('Mensagem enviada!'); }
+         if(db.status === 200) { toast('Mensagem enviada!'); limpaCampos() }
         } catch(err) {
             toast.warn('Erro ao enviar, tente novamente!');
         }
@@ -72,6 +72,13 @@ function Contact() {
         const link = await axios.get(`${url.url}/api/ticket`);
         setLink(link.data);
       };
+
+      function limpaCampos() {
+        var elements = document.getElementsByName("form_txt");
+        elements.forEach(element => {
+          element.value = '';
+        })
+      }
 
       useEffect(() => {
         loadInfo();
@@ -102,15 +109,15 @@ function Contact() {
                     <div className="box">
                         <form onSubmit={(event) => handleSubmit(event)} required="true">
                             <div>
-                                <input type="text" required="true" value={name} onChange={(event) => nameChange(event)}></input>
+                                <input name="form_txt" type="text" required="true" value={name} onChange={(event) => nameChange(event)}></input>
                                 <label alt="nome">Nome</label>
                             </div>
                             <div>
-                                <input type="text" required="true" value={phone} onChange={(event) => phoneChange(event)}></input>
+                                <input name="form_txt" type="text" required="true" value={phone} onChange={(event) => phoneChange(event)}></input>
                                 <label alt="telefone">Telefone</label>
                             </div>
                             <div>
-                                <select required="true" value={subject} onChange={(event) => subjectChange(event)}>
+                                <select name="form_txt" required="true" value={subject} onChange={(event) => subjectChange(event)}>
                                     {list.map((item, index) => (
                                         <option key={index} value={item.name} alt={item.name}>{item.name}</option>
                                     ))}
@@ -118,10 +125,10 @@ function Contact() {
                                 <label alt="assunto">Assunto</label>
                             </div>
                             <div>
-                                <textarea required="true" value={message} onChange={(event) => messageChange(event)}></textarea>
+                                <textarea name="form_txt" required="true" value={message} onChange={(event) => messageChange(event)}></textarea>
                                 <label alt="Mensagem">Messagem</label>
                             </div>
-                            <button type="submit" value="submit" alt="enviar" onsubmit={notify}>Enviar</button>
+                            <button type="submit" value="submit" alt="enviar" onSubmit={notify}>Enviar</button>
                         </form>
                     </div>
                 </section>

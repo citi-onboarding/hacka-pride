@@ -12,9 +12,15 @@
     overflow-y: hidden;
 }
 
+.positioning-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .position-guests {
     margin-top: 100px;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 .all-content h2 {
@@ -125,6 +131,10 @@
     align-self: flex-end;
 }
 
+.hug-svg:hover {
+    background: url('./hughover.svg');
+}
+
 .aff {
     align-self: flex-end;
 }
@@ -193,22 +203,6 @@
 }
 
 @media (max-width: 1010px){
-    .hug-svg {
-        display: none;
-    }
-
-    .hug-svg-mobile {
-        background: url('./Mobile.svg');
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 180px;
-        height: 193px;
-        top: 810px;
-        right: 0;
-        z-index: 1;
-        align-self: flex-end;
-    }
-
     .all-content h2 {
         width: 200px;
         font-size: 21px;
@@ -216,12 +210,48 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .hug-svg {
+        top: 3200px;
+    }
+
+    .all-content {
+        margin-top: 600px;
+    }
+
+    .all-content h2 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hug-svg {
+        display: none;
+    }
+
+    .hug-svg-mobile {
+        background: url('./Mobile.svg');
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 193px;
+        position: absolute;
+        top: 2750px;
+        right: 0;
+    }
+
+    .all-content h2 {
+        width: 230px;
+    }
+}
+
+
 @media (max-width: 500px) {
+
     .all-content {
         margin-top: 250px;
     }
 
     .hug-svg-mobile {
-        top: 2770px;
+        top: 2750px;
     }
 }

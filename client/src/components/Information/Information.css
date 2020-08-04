@@ -103,6 +103,25 @@
     box-sizing: content-box;
 }
 
+.fixing-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.dois {
+    padding-top: 20px;
+}
+
+.um {
+    padding-bottom: 20px;
+}
+
+.tres {
+    padding-top: 50px;
+}
+
 .second {
     width: 152px;
     height: 73px;
@@ -195,9 +214,41 @@
     }
 }
 
-@media (max-width: 967px) {
+@media (max-width: 1000px) {
+    .all-information-content {
+        margin-top: 700px;
+    }
+
+    .prizing p {
+        text-align: unset;
+        align-self: center;
+        width: 200px;
+        margin-left: -50px;
+    }
+
     .trophy-svg {
-        top: 600px;
+        top: 1750px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .prizing {
+        width: 280px;
+    }
+
+    .text-description {
+        font-size: 14px;
+    }
+
+    .um,
+    .dois, 
+    .tres {
+        padding: 0px;
+    }
+
+    .fixing-column {
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .data-content {

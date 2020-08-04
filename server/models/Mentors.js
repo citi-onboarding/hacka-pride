@@ -2,7 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Mentors = new keystone.List('Mentors');
+const Mentors = new keystone.List('Mentors', {
+    map: {name: 'Nome'},
+});
 
 //social media is default 0 in case we need to verify its there later
 Mentors.add({

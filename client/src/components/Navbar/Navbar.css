@@ -132,7 +132,7 @@ nav a .normal-button:hover {
     .logo-2 {
         float: left;
         align-self: flex-start;
-        z-index: 10;
+        z-index: 7;
         transition: all .9s ease-in-out;
     }
 
@@ -172,7 +172,7 @@ nav a .normal-button:hover {
         background: #ffffff;
         flex-direction: column;
         width: auto;
-        height: 95%;
+        height: 100%;
         margin-top: 70%;
         bottom: 120%;
         transition: all .5s ease-in-out;

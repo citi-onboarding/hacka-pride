@@ -13,7 +13,7 @@ import './Slider.css';
 //this component will be rendering the informations to staffs slider
 function Slide() {
 
-    const [dadosStaffs, setDados] = useState([]);
+    const [dadosStaffs, setDados] = useState({dataStaffs: []});
     
     const loadDados = async () => {
         const res = await axios.get(`${url.url}/api/collaborators`);
@@ -65,7 +65,6 @@ function Slide() {
                 />
             );
           })}
-          <span className="hide">oi</span>
           </Slider>
           <button className="prox" onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();

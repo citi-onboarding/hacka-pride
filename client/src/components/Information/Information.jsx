@@ -43,20 +43,26 @@ function Information() {
                 <div className="prizing">
                     <h3>Premiações</h3>
                     <div className="each-prize">
-                        <div className="second" alt="pódio segundo lugar">
-                            <h1 className="each-position podium-sec display-number">2</h1>
-                            <h1 className="mobile-position-number adjusting-display">1</h1>
-                            <p>{info[0]?.premio2}</p>
+                        <div className="fixing-column">
+                        <p className="dois">{info[0]?.premio2}</p>
+                            <div className="second" alt="pódio segundo lugar">
+                                <h1 className="each-position podium-sec display-number">2</h1>
+                                <h1 className="mobile-position-number adjusting-display">1</h1>
+                            </div>
                         </div>
-                        <div className="first-prize" alt="pódio primeiro lugar">
-                            <h1 className="each-position podium-first display-number">1</h1>
-                            <h1 className="mobile-position-number adjusting-display">2</h1>
-                            <p>{info[0]?.premio1}</p>
+                        <div className="fixing-column">
+                            <p className="um">{info[0]?.premio1}</p>
+                            <div className="first-prize" alt="pódio primeiro lugar">
+                                <h1 className="each-position podium-first display-number">1</h1>
+                                <h1 className="mobile-position-number adjusting-display">2</h1>
+                            </div>
                         </div>
-                        <div className="third" alt="pódio terceiro lugar">
-                            <h1 className="each-position podium-third display-number">3</h1>
-                            <h1 className="mobile-position-number adjusting-display">3</h1>
-                            <p>{info[0]?.premio3}</p>
+                        <div className="fixing-column">
+                            <p className="tres">{info[0]?.premio3}</p>
+                            <div className="third" alt="pódio terceiro lugar">
+                                <h1 className="each-position podium-third display-number">3</h1>
+                                <h1 className="mobile-position-number adjusting-display">3</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
