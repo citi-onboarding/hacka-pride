@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Hug from './Hug';
 
 import Mentors from '../Mentors';
 import Slider from '../Slider';
@@ -31,10 +32,9 @@ function Guests(props) {
                         <Mentors />
                     </div>
             </div>
-                <div className="hug-svg" alt="desenho de abraço"></div>
-                <div className="hug-svg-mobile" alt="desenho de abraço"></div>
                </div>
-               </div> 
+               </div>
+               <Hug alt="desenho de abraço"/>
         </div>
     )
 }

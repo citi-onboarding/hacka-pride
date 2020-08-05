@@ -2,7 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Staff = new keystone.List('Staff');
+const Staff = new keystone.List('Staff', {
+    map: {name: 'Nome'},
+});
 
 //social media is default 0 in case we need to verify its there
 Staff.add({

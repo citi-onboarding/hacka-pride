@@ -108,19 +108,6 @@
     margin-top: 10px;
 }
 
-.flag-svg {
-    background: url('./Ilustração\ -\ Parceiros.svg');
-    background-repeat: no-repeat;
-
-    width: 380px;
-    height: 440px;
-    position: absolute;
-    left: -100px;
-    top: 1400px;
-    transition: .3s ease-out;
-    z-index: -1;
-}
-
 .align-every {
     display: flex;
     flex-direction: row;
@@ -171,13 +158,14 @@
 
 @media (max-width: 1160px) {
     .flag-svg {
-        top: 1500px;
+        top: 2800px;
     }
 }
 
 @media (max-width: 1080px) {
     .flag-svg {
-        top: 1500px;
+        top: 2950px;
+        left: -150px
     }
 }
 
@@ -246,13 +234,17 @@
         height: 10px;
         margin-top: 10px;
     }
+}
+
+@media (max-width: 500px) {
+    .all-partner-content {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 80%;
+    }
 
     .flag-svg {
-        background: url('./Ilustração\ -\ mobile.svg');
-        width: 250px;
-        height: 305px;
-        left: -60px;
-        top: 1870px;
+        top: 3820px;
     }
 }
 
@@ -262,16 +254,17 @@
     }
 
     .flag-svg {
-        top: 1840px;
+        top: 3780px;
     }
 
     .all-partner-content {
-        margin-top: 58%;
+        margin-top: 65%;
     }
 }
 
 @media (min-width: 1400px) {
     .all-partner-content {
         margin: 0 auto;
+        margin-top: 100px;
     }
 }

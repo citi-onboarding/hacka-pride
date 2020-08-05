@@ -1,0 +1,43 @@
+.hug-component {
+    width: 360px;
+    position: absolute;
+    top: 2100px;
+    right: 0px;
+}
+
+.hug-component:hover .movement-svg {
+    transform: translate(-40px, 0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .hug-component {
+        top: 3250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hug-component {
+        width: 280px;
+        top: 3220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hug-component {
+        width: 240px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hug-component {
+        top: 2780px;
+    }
+}
+
+@media (max-width: 370px) {
+    .hug-component {
+        width: 200px;
+        top: 2750px;
+    }
+}

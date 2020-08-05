@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
+  Banner,
   Navbar,
-  Slider,
   Information,
   Guests,
   Contact,
@@ -14,7 +14,13 @@ import {
 function App() {
   return (
     <section className="app">
+      <Navbar />
+      <Banner />
       <Information />
+      <Guests />
+      <Partners />
+      <Contact />
+      <Footer />
     </section>
   );
 }

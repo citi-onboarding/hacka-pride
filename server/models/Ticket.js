@@ -3,8 +3,8 @@ const { Types } = keystone.Field;
 
 const Ticket = new keystone.List('Link Ingresso', {
     map: { name: 'key' },
-    nocreate: false,
-    nodelete: false,
+    nocreate: true,
+    nodelete: true,
 });
 
 Ticket.add({

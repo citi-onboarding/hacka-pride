@@ -13,7 +13,7 @@ import './Slider.css';
 //this component will be rendering the informations to staffs slider
 function Slide() {
 
-    const [dadosStaffs, setDados] = useState([]);
+    const [dadosStaffs, setDados] = useState({dataStaffs: []});
     
     const loadDados = async () => {
         const res = await axios.get(`${url.url}/api/collaborators`);
@@ -28,11 +28,10 @@ function Slide() {
         arrows: true,
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        speed: 700,
         autoplaySpeed: 4000,
         cssEase: "linear",
         mobileFirst: true,
@@ -65,7 +64,6 @@ function Slide() {
                 />
             );
           })}
-          <span className="hide">oi</span>
           </Slider>
           <button className="prox" onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();

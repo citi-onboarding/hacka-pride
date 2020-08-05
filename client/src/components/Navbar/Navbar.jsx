@@ -17,7 +17,7 @@ function Navbar(props) {
       const nav = document.querySelector('.tipo-1');
       window.onscroll = function () {
           var top = window.scrollY;
-          if (top >= 100){
+          if (top >= 80){
               nav.classList.add('box-sombra')
           } else {
               nav.classList.remove('box-sombra');
@@ -31,7 +31,7 @@ function Navbar(props) {
             <div className="logo"></div>
             <ul for="nav-shaddow" className="options">
                 <li className="text">
-                    <a for="nav-shaddow" className="normal-text" alt="informações">Informações</a>
+                    <a for="nav-shaddow" className="normal-text" alt="informações" href="#infos">Informações</a>
                 </li>
                 <li className="text">
                     <a className="normal-text" alt="convidados" href="#guests">Convidados</a>
@@ -52,13 +52,40 @@ function Navbar(props) {
         <input id="nav-toggle" type="checkbox"></input>
             <div class="links">
                 <div className="text-mobile">
-                    <a href="#"><h3>Informações sobre o evento</h3></a>
+                    <a href="#infos" className="nav-infos-link" onClick={() => {
+                        var menu = document.querySelector('.nav-infos-link');
+                        var closeIcon = document.querySelector('#nav-toggle');
+                    
+                        menu.addEventListener('click', handleMenuClick);
+                    
+                        function handleMenuClick() {
+                            closeIcon.checked = false;
+                        }
+                    }}><h3>Informações sobre o evento</h3></a>
                 </div>
                 <div className="text-mobile">
-                    <a href="#guests"><h3>Convidados do Hacka Pride</h3></a>
+                    <a href="#guests" className="link-to-guests" onClick={() => {
+                        var menu = document.querySelector('.link-to-guests');
+                        var closeIcon = document.querySelector('#nav-toggle');
+                    
+                        menu.addEventListener('click', handleMenuClick);
+                    
+                        function handleMenuClick() {
+                            closeIcon.checked = false;
+                        }
+                    }}><h3>Convidados do Hacka Pride</h3></a>
                 </div>
                 <div className="text-mobile">
-                    <a href="#contact" for="nav-toggle"><h3>Tire suas dúvidas conosco</h3></a>
+                    <a href="#contact" for="nav-toggle" className="link-to-contact" onClick={() => {
+                        var menu = document.querySelector('.link-to-contact');
+                        var closeIcon = document.querySelector('#nav-toggle');
+                    
+                        menu.addEventListener('click', handleMenuClick);
+                    
+                        function handleMenuClick() {
+                            closeIcon.checked = false;
+                        }
+                    }}><h3>Tire suas dúvidas conosco</h3></a>
                 </div>
                 {resp && (
                 <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="button-mobile">Ingresso</button></a></div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import url from '../../apiURL';
+import Trophy from './Trophy';
 
 
 import './Information.css';
@@ -8,7 +9,6 @@ import '../General.css';
 
 function Information() {
     const [info, setInfo] = useState('');
-    const [repo, setRepo] = useState('');
 
     const getDateData = async () => {
         const res = await axios.get(`${url.url}/api/goal`);
@@ -23,9 +23,10 @@ function Information() {
 
 
     return (
-        <div className="all-information-content">
+        <div className="all-information-content" id="infos">
             <h2>Informações sobre o evento</h2>
-            <div className="trophy-svg" alt="ilustração de arco-íris e um casal segurando troféu"></div>
+            {/* <div className="trophy-svg" alt="ilustração de arco-íris e um casal segurando troféu"></div> */}
+            <Trophy />
             <section className="data-content">
                 {info && (
                 <>
@@ -43,20 +44,26 @@ function Information() {
                 <div className="prizing">
                     <h3>Premiações</h3>
                     <div className="each-prize">
-                        <div className="second" alt="pódio segundo lugar">
-                            <h1 className="each-position podium-sec display-number">2</h1>
-                            <h1 className="mobile-position-number adjusting-display">1</h1>
-                            <p>{info[0]?.premio2}</p>
+                        <div className="fixing-column">
+                        <p className="dois">{info[0]?.premio2}</p>
+                            <div className="second" alt="pódio segundo lugar">
+                                <h1 className="each-position podium-sec display-number">2</h1>
+                                <h1 className="mobile-position-number adjusting-display">1</h1>
+                            </div>
                         </div>
-                        <div className="first-prize" alt="pódio primeiro lugar">
-                            <h1 className="each-position podium-first display-number">1</h1>
-                            <h1 className="mobile-position-number adjusting-display">2</h1>
-                            <p>{info[0]?.premio1}</p>
+                        <div className="fixing-column">
+                            <p className="um">{info[0]?.premio1}</p>
+                            <div className="first-prize" alt="pódio primeiro lugar">
+                                <h1 className="each-position podium-first display-number">1</h1>
+                                <h1 className="mobile-position-number adjusting-display">2</h1>
+                            </div>
                         </div>
-                        <div className="third" alt="pódio terceiro lugar">
-                            <h1 className="each-position podium-third display-number">3</h1>
-                            <h1 className="mobile-position-number adjusting-display">3</h1>
-                            <p>{info[0]?.premio3}</p>
+                        <div className="fixing-column">
+                            <p className="tres">{info[0]?.premio3}</p>
+                            <div className="third" alt="pódio terceiro lugar">
+                                <h1 className="each-position podium-third display-number">3</h1>
+                                <h1 className="mobile-position-number adjusting-display">3</h1>
+                            </div>
                         </div>
                     </div>
                 </div>

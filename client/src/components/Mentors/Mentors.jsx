@@ -13,7 +13,7 @@ import '../Slider/Slider.css';
 //this component will be rendering the informations to staffs slider
 function Mentors() {
 
-    const [dadosMentors, setDados] = useState([]);
+    const [dadosMentors, setDados] = useState({dataMentors: []});
     
     const loadDados = async () => {
         const res = await axios.get(`${url.url}/api/collaborators`);
@@ -28,11 +28,10 @@ function Mentors() {
         arrows: true,
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        speed: 700,
         autoplaySpeed: 4000,
         cssEase: "linear"
       };
@@ -56,7 +55,6 @@ function Mentors() {
                   />
               );
             })}
-            <span className="hide">oi</span>
         </Slider>
         <button className="prox" onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();
