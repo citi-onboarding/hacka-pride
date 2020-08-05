@@ -108,22 +108,6 @@
     margin-top: 10px;
 }
 
-.flag-svg {
-    background: url('./Ilustração\ -\ Parceiros.svg');
-    background-repeat: no-repeat;
-
-    width: 380px;
-    height: 440px;
-    position: absolute;
-    left: -100px;
-    top: 2750px;
-}
-
-.flag-svg:hover {
-    background: url('./hover.svg');
-    top: 2741px;
-}
-
 .align-every {
     display: flex;
     flex-direction: row;
@@ -250,21 +234,13 @@
         height: 10px;
         margin-top: 10px;
     }
-
-    .flag-svg {
-        background: url('./Ilustração\ -\ mobile.svg');
-        width: 250px;
-        height: 305px;
-        left: -60px;
-        top: 4400px;
-    }
 }
 
 @media (max-width: 500px) {
     .all-partner-content {
         margin: 0 auto;
         width: 300px;
-        margin-top: 65%;
+        margin-top: 80%;
     }
 
     .flag-svg {

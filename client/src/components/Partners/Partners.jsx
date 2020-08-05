@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import url from '../../apiURL';
+import Flag from './Flag';
 
 import './Partners.css';
 import '../General.css';
@@ -39,12 +40,13 @@ function Partners() {
                         <div className="divisoria"></div>
                         <p className="desc">{descrição}</p>
                         <div className="svg-company">
-                            <a href={facebook} target="_blank" alt="facebook citi"><div className="face"></div></a>
-                            <a href={instagram} target="_blank" alt="instagram citi"><div className="insta"></div></a>
-                            <a href={site} target="_blank" alt="site citi"><div className="web"></div></a>
+                            <a href={facebook} target="_blank" alt="facebook citi" rel="noopener noreferrer"><div className="face"></div></a>
+                            <a href={instagram} target="_blank" alt="instagram citi" rel="noopener noreferrer"><div className="insta"></div></a>
+                            <a href={site} target="_blank" alt="site citi" rel="noopener noreferrer"><div className="web"></div></a>
                             <p className="website">citi.org.br</p>
                         </div>
-                        <div className="flag-svg"></div>
+                        {/* <div className="flag-svg"></div> */}
+                        <Flag />
                 </div>
                 ))}
             </div>        

@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import {
   Banner,
   Navbar,
-  Slider,
   Information,
   Guests,
   Contact,

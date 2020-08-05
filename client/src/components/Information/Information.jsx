@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import url from '../../apiURL';
+import Trophy from './Trophy';
 
 
 import './Information.css';
@@ -8,7 +9,6 @@ import '../General.css';
 
 function Information() {
     const [info, setInfo] = useState('');
-    const [repo, setRepo] = useState('');
 
     const getDateData = async () => {
         const res = await axios.get(`${url.url}/api/goal`);
@@ -25,7 +25,8 @@ function Information() {
     return (
         <div className="all-information-content" id="infos">
             <h2>Informações sobre o evento</h2>
-            <div className="trophy-svg" alt="ilustração de arco-íris e um casal segurando troféu"></div>
+            {/* <div className="trophy-svg" alt="ilustração de arco-íris e um casal segurando troféu"></div> */}
+            <Trophy />
             <section className="data-content">
                 {info && (
                 <>

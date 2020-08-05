@@ -1,0 +1,51 @@
+.flag-component {
+    width: 380px;
+    position: absolute;
+    left: -100px;
+    top: 2900px;
+}
+
+.flag-component:hover .rotating-flag {
+    transform: matrix(0.966, -0.259, 0.259, 0.966, -727.574, 14.739) rotate(0deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .flag-component {
+        top: 4400px;
+        width: 310px;
+    }
+}
+
+@media (max-width: 700px) {
+    .flag-component {
+        width: 280px;
+        top: 4380px;
+    }
+}
+
+@media (max-width: 600px) {
+    .flag-component {
+        width: 240px;
+        top: 4280px;
+    }
+}
+
+@media (max-width: 500px) {
+    .flag-component {
+        top: 3970px;
+        left: -60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .flag-component {
+        top: 3880px;
+    }
+}
+
+@media (max-width: 355px) {
+    .flag-component {
+        top: 3800px;
+    }
+}

@@ -5,8 +5,6 @@ import url from '../../apiURL';
 import './Banner.css';
 import '../General.css';
 
-let db = [];
-
 function Banner() {
     const [timerDays, setTimerDays] = useState(0);
     const [timerHours, setTimerHours] = useState(0);
@@ -88,12 +86,12 @@ function Banner() {
                     <div className="blue-block">
                         <div className="inside-block-content">
                             <h6 className="block-number adjust-number">{(timerSeconds < 10) ? '0'+timerSeconds : timerSeconds}</h6>
-                            <p>segundos</p>
+                            <p className="mobile-adjust">segundos</p>
                         </div>
                     </div>
                 </div>
                 <p className="banner-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
-                <a href={ingresso[0]?.EditalURL} target="_blank"><button className="banner-button" alt="botao edital">Edital</button></a>
+                <a href={ingresso[0]?.EditalURL} target="_blank" rel="noopener noreferrer"><button className="banner-button" alt="botao edital">Edital</button></a>
                 </>
                 )}
             </div>

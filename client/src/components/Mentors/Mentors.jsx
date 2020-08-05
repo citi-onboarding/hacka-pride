@@ -28,11 +28,10 @@ function Mentors() {
         arrows: true,
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        speed: 700,
         autoplaySpeed: 4000,
         cssEase: "linear"
       };
