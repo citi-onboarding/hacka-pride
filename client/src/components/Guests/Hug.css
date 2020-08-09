@@ -6,8 +6,49 @@
 }
 
 .hug-component:hover .movement-svg {
-    transform: translate(-40px, 0px);
+    transform: translate(-20px, 0px);
     transition: transform 0.5s ease-in-out;
+}
+
+.hug-component:hover #body_mov {
+    transform: translate(17.3px, -2.85px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hug-component:hover #white_mov {
+    transform: translate(17.27px, -2.409px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hug-component:hover #hair_mov {
+    transform: translate(16.775px);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.hug-component:hover #head_mov {
+    transform: translate(-733.168px, -304.17px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hug-component:hover #neck_mov {
+    transform: translate(25.348px, 30.379px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hug-component:hover #feetone_mov {
+    transform: translate(18px, -13.354px);
+    transition: transform 0.5s ease-in-out;    
+}
+
+.hug-component:hover #feettwo_mov {
+    transform: translate(16.327px, -13.354px);
+    transition: transform 0.5s ease-in-out;    
+}
+
+.hug-component:hover #hand_mov {
+    transform: translate(-1.549px, -5.571px);
+    transition: transform 0.5s ease-in-out;  
 }
 
 @media (max-width: 1000px) {

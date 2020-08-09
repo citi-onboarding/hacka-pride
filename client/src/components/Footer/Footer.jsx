@@ -13,7 +13,7 @@ function Footer() {
       <div className="purple" alt="footer"></div>
         <footer  className="footer-footer">
             <p>Copyright &copy; 2020 Codecup</p>
-            <p>Made with &lt;/&gt; and &nbsp;<div className="heart"></div>&nbsp;by CITi</p>
+            <p>Made with &lt;/&gt; and &nbsp;<span className="heart"></span>&nbsp;by CITi</p>
         </footer>
     </section>
     );

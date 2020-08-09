@@ -248,6 +248,6 @@ nav a .normal-button:hover {
 
 @media screen and (max-width: 500px) {
     .links {
-        height: 93%;
+        height: 100%;
     }
 }

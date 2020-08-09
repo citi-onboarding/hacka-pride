@@ -5,7 +5,7 @@
 
 .trophy-animation:hover .animation-hands {
     transform: translate(-36.589px, 186.596px) rotate(-20deg);
-    transition: transform 0.4s ease-in-out;
+    transition: transform ease-in-out;
 }
 
 @media (max-width: 1000px) {
