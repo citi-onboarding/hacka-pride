@@ -55,7 +55,7 @@ function Slide() {
             return (    
               <Description 
                 key={_id}
-                img={Foto.url}
+                img={Foto.secure_url}
                 Nome={Nome}
                 Descrição={Descrição}
                 linkFB={FacebookURL}
