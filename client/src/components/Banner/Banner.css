@@ -257,6 +257,10 @@
         margin-top: 10px;
     }
 
+    h6.block-number.adjust-number {
+        margin-left: 10.5px;
+    }
+
     .adjust-number {
         margin-left: 8px;
     }
@@ -268,10 +272,14 @@
     .correct-self {
         margin-left: 3px;
     }
-    
+
     .inside-block-content p {
         font-size: 9px;
         margin-left: 3px;
+    }
+
+    p.mobile-adjust {
+        margin-left: 8.5px;
     }
 
     .title-banner {

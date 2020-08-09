@@ -107,17 +107,17 @@ function Contact() {
                 <section className="submit-message" alt="enviar mensagem">
                     <h2>Nos mande uma mensagem</h2>
                     <div className="box">
-                        <form onSubmit={(event) => handleSubmit(event)} required="true">
+                        <form onSubmit={(event) => handleSubmit(event)} required={true}>
                             <div>
-                                <input name="form_txt" type="text" required="true" value={name} onChange={(event) => nameChange(event)}></input>
+                                <input name="form_txt" type="text" required={true} value={name} onChange={(event) => nameChange(event)}></input>
                                 <label alt="nome">Nome</label>
                             </div>
                             <div>
-                                <input name="form_txt" type="text" required="true" value={phone} onChange={(event) => phoneChange(event)}></input>
+                                <input name="form_txt" type="text" required={true} value={phone} onChange={(event) => phoneChange(event)}></input>
                                 <label alt="telefone">Telefone</label>
                             </div>
                             <div>
-                                <select name="form_txt" required="true" value={subject} onChange={(event) => subjectChange(event)}>
+                                <select name="form_txt" required={true} value={subject} onChange={(event) => subjectChange(event)}>
                                     {list.map((item, index) => (
                                         <option key={index} value={item.name} alt={item.name}>{item.name}</option>
                                     ))}
@@ -125,7 +125,7 @@ function Contact() {
                                 <label alt="assunto">Assunto</label>
                             </div>
                             <div>
-                                <textarea name="form_txt" required="true" value={message} onChange={(event) => messageChange(event)}></textarea>
+                                <textarea name="form_txt" required={true} value={message} onChange={(event) => messageChange(event)}></textarea>
                                 <label alt="Mensagem">Messagem</label>
                             </div>
                             <button type="submit" value="submit" alt="enviar" onSubmit={notify}>Enviar</button>

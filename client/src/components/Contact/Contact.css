@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 .all {
     display: flex;
     flex-direction: column;
@@ -299,7 +301,7 @@ select option {
     }
 
     .submit-message h2 {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .rainbow {

@@ -200,6 +200,7 @@
 
     .all-content h2 {
         width: 300px;
+        margin-left: 27%;
     }
 }
 
@@ -210,6 +211,7 @@
 
     .all-content h2 {
         width: 230px;
+        margin-left: 10%;
     }
 }
 
