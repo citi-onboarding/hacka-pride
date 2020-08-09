@@ -16,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public",
-    "server": "react-scripts build && rm -rf ../server/public && mv ./build ../server/public"
+    "serverwin": "react-scripts build && rd /q ..\\public && move .\\build ..\\public",
+    "server": "react-scripts build && rm -rf ../public && mv ./build ../public"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -29,7 +29,7 @@ function Partners() {
             <div className="partners-logos">
                 {partners.dataParceiros?.map(({ _id, nome, imagens }) => (
                 <div className="div-size">
-                    <img className="each-logo" key={_id} src={imagens[0]?.url} alt={nome}></img>
+                    <img className="each-logo" key={_id} src={imagens[0]?.secure_url} alt={nome}></img>
                 </div>
                 ))}
             </div>
