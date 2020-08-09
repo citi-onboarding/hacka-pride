@@ -33,7 +33,7 @@ function Slide() {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
-        cssEase: "linear",
+        cssEase: "ease-in-out",
         mobileFirst: true,
         responsive: [
           {

@@ -33,7 +33,7 @@ function Mentors() {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
-        cssEase: "linear"
+        cssEase: "ease-in-out",
       };
 
     return (
@@ -46,7 +46,7 @@ function Mentors() {
             return (    
                 <Description
                   key={_id}
-                  img={Foto.url}
+                  img={Foto.secure_url}
                   Nome={Nome}
                   Descrição={Descrição}
                   linkFB={FacebookURL}
