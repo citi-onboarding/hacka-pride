@@ -91,13 +91,13 @@ function Navbar() {
                     }}>Convidados</a>
                 </li>
                 <li className="text">
-                    <a className="normal-text" alt="parceiros" href="#parceiros" onClick={() => {
-                        window.scrollTo(0, 2200);
+                    <a className="normal-text" alt="parceiros" href="#parceiro" onClick={() => {
+                        window.scrollTo(0, 2220);
                     }}>Parceiros</a>
                 </li>
                 <li className="text">
                     <a className="normal-text" alt="contato" href="#contato" onClick={()=> {
-                        window.scrollTo(0, 3200);
+                        window.scrollTo(0, 3210);
                     }}>Contato</a>
                 </li>
                 {resp && (
