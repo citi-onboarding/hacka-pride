@@ -5,50 +5,58 @@
     right: 0px;
 }
 
+.movement-svg,
+#body_mov,
+#white_mov,
+#hair_mov,
+#head_mov,
+#neck_mov,
+#feetone_mov,
+#feettwo_mov,
+#hand_mov {
+    transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -webkit-transition: transform 0.5s linear; 
+}
+
 .hug-component:hover .movement-svg {
     transform: translate(-20px, 0px);
-    transition: transform 0.5s ease-in-out;
 }
+
 
 .hug-component:hover #body_mov {
     transform: translate(17.3px, -2.85px);
-    transition: transform 0.5s ease-in-out;
 }
 
 .hug-component:hover #white_mov {
     transform: translate(17.27px, -2.409px);
-    transition: transform 0.5s ease-in-out;
 }
 
 .hug-component:hover #hair_mov {
     transform: translate(16.775px);
-    transition: transform 0.5s ease-in-out;
 }
 
 
 .hug-component:hover #head_mov {
     transform: translate(-733.168px, -304.17px);
-    transition: transform 0.5s ease-in-out;
 }
 
 .hug-component:hover #neck_mov {
     transform: translate(25.348px, 30.379px);
-    transition: transform 0.5s ease-in-out;
 }
 
 .hug-component:hover #feetone_mov {
     transform: translate(18px, -13.354px);
-    transition: transform 0.5s ease-in-out;    
 }
 
 .hug-component:hover #feettwo_mov {
     transform: translate(16.327px, -13.354px);
-    transition: transform 0.5s ease-in-out;    
 }
 
 .hug-component:hover #hand_mov {
     transform: translate(-1.549px, -5.571px);
-    transition: transform 0.5s ease-in-out;  
 }
 
 @media (max-width: 1000px) {
@@ -79,6 +87,13 @@
 @media (max-width: 370px) {
     .hug-component {
         width: 200px;
-        top: 2750px;
+        top: 2790px;
+    }
+}
+
+@media (max-width: 340px) {
+.hug-component {
+    width: 180px;
+    top: 2760px;
     }
 }
