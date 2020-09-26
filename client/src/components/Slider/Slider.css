@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.slider-pattern {
+    display: flex;
+    flex-direction: row;
+    width: 452px;
+    height: 195px;
+
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.slick-track {
+    opacity: 1;
+}
+
+.slick-initialized {
+    visibility: visible;
+}
+
+.hide { 
+    visibility: hidden; 
+}
+
+.photo-shoot {
+    position: absolute;
+    z-index: 0;
+    width: 249px;
+    height: 195px;
+    margin-left: 3px;
+}
+
+.photo-size {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+    height: 150px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 0;
+    margin-top: 13px;
+    margin-left: 205px; 
+    box-shadow: 3px 3px 6px #B3B3B3;
+    border-radius: 3px 10px 10px 3px;
+}
+
+.details {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 140px;
+    height: 130px;
+    margin-left: 10%;
+}
+
+.details p {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 105px;
+    height: 26.0019px;
+    border: none;
+}
+
+.logo-image {
+    width: 27px;
+    height: 27px;
+}
+
+.linkedin {
+    background: url('./LinkedIn.svg') transparent;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    background: url('./Instagram.svg');
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background: url('./Facebook.svg');
+    background-repeat: no-repeat;
+}
+
+.prox {
+    background: url('./next.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 15px;
+    height: 30px;
+ }
+
+ .prev {
+    background: url('./prev.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 15px;
+    height: 30px;
+    margin-left: 3px;
+ }
+
+ .fix-content {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 490px;
+     height: 240px;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+ .slick-next:hover {
+     display: block;
+ }
+
+.slick-prev:before, .slick-next:before {
+    font-size: 0px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #2D65F8;
+}
+
+.slick-dots li button:before {
+    font-size: 9px;
+    color: #2D65F8;
+}
+
+li .slick-active .slick-initialized {
+    visibility: hidden;
+}
+
+@media (max-width: 1170px) {
+    .slider-pattern,
+    .fix-content {
+        width: 293px;
+        height: 154px;
+    }
+
+    .photo-size {
+        width: 80%;
+        height: 80%;
+        margin-left: 1px;
+    }
+
+    .description {
+        width: 150px;
+        height: 132px;
+        margin-left: 133px;
+    }
+
+    .details {
+        width: 122px;
+        height: 90px;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+
+    .prox,
+    .prev {
+        display: none;
+    }
+
+    .logo-image {
+        width: 23px;
+        height: 23px;
+    }
+
+    .facebook {
+        background: url('./Facebook-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .instagram {
+        background: url('./Instagram-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .linkedin {
+        background: url('./LinkedIn-mobile.svg');
+    }
+}
+
+/* updates */

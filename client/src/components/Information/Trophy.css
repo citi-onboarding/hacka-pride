@@ -1,0 +1,22 @@
+.trophy-animation {
+    position: absolute;
+    left: -10px;
+}
+
+.trophy-animation:hover .animation-hands {
+    transform: translate(-36.589px, 186.596px) rotate(-20deg);
+    transition: transform ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .trophy-animation {
+        top: 1800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .trophy-animation {
+        width: 215px;
+        top: 1390px;
+    }
+}

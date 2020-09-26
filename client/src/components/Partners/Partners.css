@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.all-partner-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 10%;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 520px;
+    height: auto;
+    margin-left: 10%;
+}
+
+.text-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.text-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: regular;
+    text-align: left;
+    letter-spacing: 0;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 820px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.div-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 166px;
+    height: 85px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.each-logo {
+    width: 118px;
+    height: auto;
+    align-self: center;
+}
+
+.div-size:hover {
+    box-shadow: 0px 3px 6px #CCCCCC;
+}
+
+.company-citi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 467px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.citi-logo-image {
+    width: 136px;
+    height: 81px;
+    background: url('./CITi\ Logo.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.divisoria {
+    width: 338px;
+    height: 2px;
+    background: url('./Divisória.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.company-citi .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+
+    width: 467px;
+    height: 54px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.align-every {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.svg-company {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 146px;
+    height: 19px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.face {
+    background: url('./Facebook.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+}
+
+.insta {
+    background: url('./Instagram.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+}
+
+.web {
+    background: url('./globe.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+}
+
+.svg-company .website {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+}
+
+@media (max-width: 1160px) {
+    .flag-svg {
+        top: 2800px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .flag-svg {
+        top: 2950px;
+        left: -150px
+    }
+}
+
+@media (max-width: 1000px) {
+    .all-partner-content {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 55%;
+    }
+
+    .text-section h2 {
+        font-size: 21px;
+        width: 295px
+    }
+
+    .div-size {
+        width: 78px;
+        height: 59px;
+        align-self: center;
+    }
+
+    .each-logo {
+        width: 85px;
+        height: auto;
+    }
+
+    .partners-logos {
+        width: 295px;
+        justify-content: space-between;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+    }
+
+    .text-section {
+        width: 100%;
+        margin-left: 0;
+        margin: 0 auto;
+        width: 295px;
+    } 
+
+    .text-section p {
+        width: 295px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .company-citi {
+        width: 295px;
+        height: auto;
+    }
+
+    .citi-logo-image {
+        background: url('./CITi\ Logo.png');
+    }
+
+    .company-citi .desc {
+        width: 295px;
+        height: auto;
+        text-align: start;
+    }
+
+    .divisoria {
+        background: url('./Divisória-mobile.svg');
+        width: 280px;
+        height: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .all-partner-content {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 400px;
+    }
+
+    .flag-svg {
+        top: 3820px;
+    }
+}
+
+@media (max-width: 340px) {
+    .partners-logos {
+        width: 290px;
+    }
+
+    .flag-svg {
+        top: 3780px;
+    }
+
+    .all-partner-content {
+        margin-top: 65%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .all-partner-content {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}

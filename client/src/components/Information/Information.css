@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.all-information-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.text-local-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data-content {
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.adjust-this {
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+.calendar-svg {
+    background: url('./Calendar.svg');
+    background-repeat: no-repeat;
+    width: 25.629px;
+    height: 24px;
+}
+
+.description-www {
+    display: flex;
+    flex-direction: column;
+}
+
+.local-svg {
+    background: url('./localization.svg');
+    background-repeat: no-repeat;
+    width: 15.73px;
+    height: 24px;
+}
+
+.all-information-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+
+    text-align: left;
+    margin-left: 10%;
+}
+
+.trophy-svg {
+    background: url('./Ilustração\ -\ Informações.svg');
+    background-repeat: no-repeat;
+    width: 394.385px;
+    height: 680.404px;
+    position: absolute;
+    left: -10px;
+    margin-top: 40px;
+}
+
+.alinhar-data {
+    margin-left: 10px;
+}
+
+.alinhar-local {
+    margin-left: 18px;
+}
+
+.text-description {
+    margin-top: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+    padding-right: 10px;
+}
+
+.font-styles {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #262626;
+    font-size: 21px;
+    opacity: 1;
+}
+
+.prizing {
+    margin-top: 40px;
+}
+
+.each-prize {
+    display: flex;
+    flex-direction: row;
+    margin-left: 145px;
+    margin-top: 40px;
+    box-sizing: content-box;
+}
+
+.fixing-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.dois {
+    padding-top: 35px;
+}
+
+.um {
+    padding-bottom: 10px;
+}
+
+.tres {
+    padding-top: 65px;
+}
+
+.second {
+    width: 152px;
+    height: 73px;
+    background-color: #454FB4;
+    align-self: flex-end;
+}
+
+.first-prize {
+    width: 152px;
+    height: 102px;
+    background-color: #454FB4;
+    margin-left: 2px;
+}
+
+.third {
+    width: 152px;
+    height: 43px;
+    background-color: #454FB4;
+    align-self: flex-end;
+    margin-left: 2px;
+}
+
+.each-position {
+    transform: translateX(48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.podium-first {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.podium-sec {
+    margin-top: 13px;
+    font-size: 35px;
+}
+
+.podium-third {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.prizing p {
+    text-align: center;
+    width: 130px;
+    margin-left: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.each-prize .second p {
+    margin-top: -100px;
+}
+
+.each-prize .first-prize p {
+    margin-top: -115px;
+}
+
+.each-prize .third p {
+    margin-top: -85px;
+}
+
+.prizing h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #262626;
+    opacity: 1;
+}
+
+.adjusting-display {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .each-prize {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .each-prize {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .all-information-content h2 {
+        text-align: center;
+        margin-left: -50px;
+    }
+    .all-information-content {
+        margin-top: 700px;
+    }
+
+    .prizing p {
+        text-align: unset;
+        align-self: center;
+        width: 200px;
+        margin-left: -50px;
+    }
+
+    .trophy-svg {
+        top: 1750px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .prizing {
+        width: 280px;
+    }
+
+    .text-description {
+        font-size: 14px;
+    }
+
+    .um,
+    .dois, 
+    .tres {
+        padding: 0px;
+    }
+
+    .fixing-column {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .data-content {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .each-prize {
+        flex-direction: column;
+        margin-top: 23px;
+    }
+
+    .first-prize,
+    .second,
+    .third {
+        width: 44px;
+        height: 41px;
+        background-color: #454FB4;
+        margin-left: 0px;
+        align-self: flex-start;
+    }
+
+    .display-number {
+        display: none;
+    }
+
+    .each-prize .second p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .each-prize .first-prize p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .each-prize .third p {
+        margin-top: 0px;
+        width: 195px;
+        margin-left: 55px;
+        margin-top: -23px;
+    }
+
+    .first-prize {
+        margin-top: 5px;
+    }
+
+    .third {
+        margin-top: 5px;
+    }
+
+    .mobile-position-number {
+        display: unset;
+        align-self: center;
+        margin-left: 33%;
+        width: 11px;
+        height: 34px;
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        font-size: 28px;
+    }
+
+    .description-www {
+        margin-top: 47px;
+    }
+}
+
+@media (max-width: 500px) {
+    .all-information-content h2 {
+        text-align: unset;
+        margin-left: 10%;
+    }
+
+    .all-information-content {
+        margin-top: 350px;
+    }
+
+    .data-content {
+        max-width: 295px;
+    }
+
+    .font-styles,
+    .text-description {
+        font-size: 16px;
+    }
+
+    .all-information-content h2 {
+        font-size: 21px;
+        max-width: 180px;
+    }
+
+    .trophy-svg {
+        background: url('./Ilustração\ -\ InfoMobile.svg');
+        background-repeat: no-repeat;
+        width: 214px;
+        height: 369px;
+        top: 1620px;
+    }
+}

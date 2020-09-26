@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.all-banner-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    margin-left: 2.5px;
+}
+
+.banner-illustration {
+    background: url('./Ilustração\ -\ banner.svg');
+    background-repeat: no-repeat;
+    width: 780px;
+    height: 637px;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+}
+
+.infos-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 163px;
+    margin-top: 60px;
+    width: 384px;
+    height: 380px;
+}
+
+.timer-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 384px;
+    margin-left: -10px;
+}
+
+.pink-block {
+    background: url('./Fundo\ -\ Dias.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.yellow-block {
+    background: url('./Fundo\ -\ Horas.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.green-block {
+    background: url('./Fundo\ -\ Minutos.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.blue-block {
+    background: url('./Fundo\ -\ Segundos.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #454FB4;
+    box-shadow: 0px 3px 8px #CCCCCC;
+    border-radius: 18px;
+    opacity: 1;
+    width: 165px;
+    height: 35px;
+    border: none;
+    transition: .5s ease-in-out;
+}
+
+.banner-button:hover {
+    box-shadow: 0px 5px 8px #B3B3B3;
+    cursor: pointer;
+}
+
+.title-banner {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #262626;
+    letter-spacing: 0;
+    opacity: 1;
+    width: 250px;
+}
+
+.banner-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.inside-block-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    color: #262626;
+    letter-spacing: 0;
+    opacity: 1;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin-left: -2.5px;
+    margin-top: 8px;
+}
+
+.inside-block-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #262626;
+    letter-spacing: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: -2.5px;
+    margin-top: -6px;
+}
+
+
+@media (max-width: 1230px) {
+    .banner-illustration {
+        width: 700px;
+    }
+    
+    .infos-banner {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .banner-illustration {
+        width: 650px;
+    }
+
+    .infos-banner {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner-illustration {
+        top: 550px;
+    }
+
+    .banner-illustration {
+        width: 780px;
+    }
+
+    .infos-banner {
+        margin: 0 auto;
+    }
+}
+
+/* @media (max-width: 990px) {
+    .banner-illustration {
+        top: 550px;
+    }
+} */
+
+@media (max-width: 600px) {
+    .banner-illustration {
+        background: url('./Arco-íris\ -\ Banner.svg');
+        background-repeat: no-repeat;
+        width: 335px;
+        height: 265px;
+        top: 620px;
+    }
+
+    .banner-people {
+        background: url('./people\ -\ Banner.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 320px;
+        height: 203px;
+        top: 620px;
+        right: 0px;
+    }
+
+    .infos-banner {
+        width: 294px;
+        height: 450px;
+    }
+
+    .timer-blocks {
+        width: 294px;
+    }
+
+    .pink-block {
+        background: url('./Mobile\ -\ Dias.svg');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .yellow-block {
+        background: url('./Mobile\ -\ Horas.svg');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .green-block {
+        background: url('./Mobile\ -\ Minutos.svg');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .blue-block {
+        background: url('./Mobile\ -\ Segundos.svg');
+        background-repeat: no-repeat;
+        width: 81px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .block-number {
+        font-weight: 500;
+        font-size: 30px;
+        width: 40px;
+        margin-top: 10px;
+    }
+
+    h6.block-number.adjust-number {
+        margin-left: 10.5px;
+    }
+
+    .adjust-number {
+        margin-left: 8px;
+    }
+
+    .correct-margin {
+        margin-left: 4px;
+    }
+
+    .correct-self {
+        margin-left: 3px;
+    }
+
+    .inside-block-content p {
+        font-size: 9px;
+        margin-left: 3px;
+    }
+
+    p.mobile-adjust {
+        margin-left: 8.5px;
+    }
+
+    .title-banner {
+        font-size: 24px;
+    }
+
+    .banner-text {
+        margin-top: -30px;
+    }
+}

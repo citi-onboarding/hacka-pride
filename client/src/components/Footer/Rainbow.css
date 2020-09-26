@@ -1,0 +1,22 @@
+.rainboww {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-self: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+@media (max-width: 860px) {
+    .rainboww {
+        width: 150%;
+    }
+}
+
+@media (max-width: 560px) {
+    .rainboww {
+        width: 250%;
+    }
+}
+
+/* updates */

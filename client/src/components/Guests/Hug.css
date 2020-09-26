@@ -1,0 +1,76 @@
+.hug-component {
+    width: 360px;
+    position: absolute;
+    top: 2100px;
+    right: 0px;
+}
+
+.movement-svg,
+.animate-all,
+#body_mov,
+#hand_mov {
+    transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear; 
+}
+
+.hug-component:hover .animate-all {
+    transform: translate(20px, 0px);
+    -webkit-transform: translate(20px, 0px);
+}
+
+.hug-component:hover .movement-svg {
+    transform: translate(-20px, 0px);
+    -webkit-transform: translate(-20px, 0px);
+}
+
+.hug-component:hover #body_mov {
+    transform: translate(17.3px, -2.85px);
+    -webkit-transform: translate(17.3px, -2.85px);
+}
+
+.hug-component:hover #hand_mov {
+    transform: translate(-1.549px, -5.571px);
+    -webkit-transform: translate(-1.549px, -5.571px);
+}
+
+@media (max-width: 1000px) {
+    .hug-component {
+        top: 3220px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hug-component {
+        width: 280px;
+        top: 3220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hug-component {
+        width: 240px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hug-component {
+        top: 2750px;
+    }
+}
+
+@media (max-width: 370px) {
+    .hug-component {
+        width: 200px;
+        top: 2660px;
+    }
+}
+
+@media (max-width: 340px) {
+.hug-component {
+    width: 180px;
+    top: 2760px;
+    }
+}

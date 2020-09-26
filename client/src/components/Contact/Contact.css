@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 10%;
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        margin-top: 25%;
+    }
+}
+
+/* SUBMIT MESSAGE SECTION CSS */
+
+.submit-message {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.submit-message h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px/24px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+}
+
+.box {
+    align-self: flex-end;
+
+    width: 445px;
+    height: 456px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box input,
+.box select,
+.box button {
+    padding: 10px 0px;
+    margin-bottom: 30px;
+}
+
+.box select {
+    background: transparent;
+}
+
+.box textarea {
+    height: 110px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    resize: none;
+}
+
+.test {
+    width: 100%;
+}
+
+.box input,
+.box select,
+.box textarea {
+    width: 340px;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #707070;
+}
+
+.box input:focus, .box select:focus, .box textarea:focus, .box input:valid, .box select:valid, .box textarea:valid {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box button {
+    margin-left: 29%;
+    background: #F7022D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #CCCCCC;
+    border-radius: 18px;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px/24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    width: 128px;
+    height: 35px;
+
+    transition: .5s;
+}
+
+select option {
+    font-family: 'Calibri', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.box button:hover {
+    box-shadow: 0px 5px 8px #B3B3B3;
+}
+
+.box form div {
+    position: relative;
+}
+
+
+.box form div label {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-self: self-end;
+    pointer-events: none;
+    transition: .5s;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #262626;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.box input:focus ~ label,
+.box select:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box select:valid ~ label,
+.box textarea:valid ~ label {
+    top: -12px;
+    color: #F7022D;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box input:focus,
+.box select:focus,
+.box textarea:focus,
+.box input:valid,
+.box select:valid,
+.box textarea:valid {
+    border-bottom: 1px solid #F7022D;
+}
+
+
+/* CONTACT INFOS CSS */
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.logo-contact {
+    width: 264px;
+    height: 63px;
+    background: url('./logoo.svg');
+    background-repeat: no-repeat;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.logo-insta {
+    width: 41px;
+    height: 41px;
+    background: url('./Instagram.svg');
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-face {
+    width: 41px;
+    height: 41px;
+    background: url('./Facebook.svg');
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.link-ingresso {
+    background: #454FB4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #CCCCCC;
+    border-radius: 18px;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    width: 246px;
+    height: 40px;
+
+    transition: .5s;
+
+    justify-self: center;
+}
+
+.link-ingresso:hover {
+    box-shadow: 0px 5px 8px #B3B3B3;
+}
+
+.rainbow-position {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ADDING RESPONSIVE */
+
+@media (max-width: 860px) {
+    .contact-box {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        justify-self: center;
+    }
+    
+    .contact {
+        margin-top: 90%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        justify-self: center;
+
+        width: 335px;
+        height: 822px;
+
+        margin-left: 0%;
+    }
+
+    .box {
+        width: 335px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .box input,
+    .box select,
+    .box textarea {
+        width: 294px;
+    }
+    
+    .submit-message {
+        margin-top: 80px;
+    }
+
+    .submit-message h2 {
+        font-size: 21px;
+    }
+
+    .rainbow {
+        margin-top: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .rainbow {
+        margin-top: 70%;
+    }
+}
+
+@media (max-width: 475px) {
+    .rainbow {
+        margin-top: 120%;
+    }
+}
+
+
+
+
+
+
