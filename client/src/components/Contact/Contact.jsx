@@ -24,6 +24,7 @@ function Contact() {
         {name: 'Dúvidas'},
         {name: 'Parceria'},
         {name: 'Estrutura'},
+        {name: 'Outros'},
       ];
 
     const nameChange = (event) => {
@@ -99,7 +100,7 @@ function Contact() {
                     )}
                     {link && (
                     <div>
-                        <a href={link[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="link-ingresso" type="button" alt="comprar ingresso">Comprar ingresso</button></a>
+                        <a href={link[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="link-ingresso" type="button" alt="comprar ingresso">Inscreva-se</button></a>
                     </div>
                     )}
                 </section>

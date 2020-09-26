@@ -102,6 +102,7 @@
     color: #262626;
     letter-spacing: 0;
     opacity: 1;
+    width: 250px;
 }
 
 .banner-text {
@@ -192,7 +193,7 @@
         background-repeat: no-repeat;
         width: 335px;
         height: 265px;
-        top: 600px;
+        top: 620px;
     }
 
     .banner-people {
@@ -201,13 +202,13 @@
         position: absolute;
         width: 320px;
         height: 203px;
-        top: 580px;
+        top: 620px;
         right: 0px;
     }
 
     .infos-banner {
         width: 294px;
-        height: 350px;
+        height: 450px;
     }
 
     .timer-blocks {

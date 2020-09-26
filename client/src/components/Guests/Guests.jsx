@@ -15,8 +15,8 @@ function Guests(props) {
             <h2>Convidados do HackaPride</h2>
             <div className="informs">
                     <div className="desc first">
-                        <h6>Staffs</h6>
-                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                        <h6>Pessoas Convidadas</h6>
+                        <p>Acreditamos juntos que é através do conhecimento que empoderamos pessoas. Conheça nossas pessoas convidadas incríveis.</p>
                     </div>
                     <div className="staffs" alt="slider dos staffs">
                         <Slider />
@@ -25,8 +25,8 @@ function Guests(props) {
 
             <div className="informs informs-reverse">
                     <div className="desc desc-mentors">
-                        <h6>Mentores</h6>
-                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                        <h6>Pessoas Mentoras</h6>
+                        <p>Sozinhes podemos chegar mais rápido, mas juntes chegamos mais longe. Veja quem são nossas pessoas mentoras.</p>
                     </div>
                     <div className="mentors" alt="slider dos mentores">
                         <Mentors />

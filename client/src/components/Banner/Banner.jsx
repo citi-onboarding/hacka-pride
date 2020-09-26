@@ -90,7 +90,7 @@ function Banner() {
                         </div>
                     </div>
                 </div>
-                <p className="banner-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+                <p className="banner-text">7 dias de capacitações e construção de soluções em equipe, revolucionando a realidade das pessoas participantes, e de toda a comunidade LGBTQIAP+</p>
                 <a href={ingresso[0]?.EditalURL} target="_blank" rel="noopener noreferrer"><button className="banner-button" alt="botao edital">Edital</button></a>
                 </>
                 )}

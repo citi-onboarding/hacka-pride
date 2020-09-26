@@ -8,6 +8,10 @@
 .flag-component:hover .rotating-flag {
     transform: matrix(0.966, -0.259, 0.259, 0.966, -727.574, 14.739) rotate(0deg);
     transition: transform ease-in-out;
+    -o-transition: transform ease-in-out;
+    -ms-transition: transform ease-in-out;
+    -moz-transition: transform ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; 
 }
 
 @media (max-width: 1000px) {
@@ -46,7 +50,7 @@
 
 @media (max-width: 420px) {
     .flag-component {
-        top: 3880px;
+        top: 3900px;
     }
 }
 

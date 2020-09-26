@@ -65,11 +65,12 @@
 
 .first {
     margin-left: 16%;
+    height: 120px;
 }
 
 .desc-mentors {
     width: 260px;
-    height: 94px;
+    height: 120px;
 
     display: flex;
     flex-direction: column;
@@ -166,8 +167,8 @@
     }
 
     .informs-reverse {
-        margin-top: 7%;
-        height: 290px;
+        margin-top: 80px;
+        height: 330px;
         position: absolute;
     }
 

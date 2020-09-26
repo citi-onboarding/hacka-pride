@@ -24,7 +24,7 @@ function Partners() {
         <div className="all-partner-content" id="partners">
             <div className="text-section">
                 <h2>Nossos parceiros</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.</p>
+                <p>Empresas que acreditam, apoiam e incentivam o evento, sem eles nada disso seria possível.</p>
             </div>
             <div className="partners-logos">
                 {partners.dataParceiros?.map(({ _id, nome, imagens }) => (
