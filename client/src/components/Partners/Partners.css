@@ -28,7 +28,7 @@
 
 .text-section p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: regular;
     text-align: left;
     letter-spacing: 0;
@@ -38,7 +38,7 @@
 
 .partners-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     width: 820px;
     height: auto;
@@ -194,6 +194,7 @@
 
     .partners-logos {
         width: 295px;
+        justify-content: space-between;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -240,7 +241,7 @@
     .all-partner-content {
         margin: 0 auto;
         width: 300px;
-        margin-top: 80%;
+        margin-top: 400px;
     }
 
     .flag-svg {

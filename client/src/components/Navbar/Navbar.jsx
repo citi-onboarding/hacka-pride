@@ -37,7 +37,7 @@ function Navbar() {
             } else if(window.innerWidth > 1000) {
                 window.scrollTo(0, 1250);
             } else {
-            window.scrollTo(0, 1950);
+            window.scrollTo(0, 1780);
             }
         }
     }
@@ -54,7 +54,7 @@ function Navbar() {
             if(window.innerWidth > 1000) {
                 window.scrollTo(0, 400);
             } else {
-                window.scrollTo(0, 900);
+                window.scrollTo(0, 850);
             }
      }
     }
@@ -82,7 +82,7 @@ function Navbar() {
             <ul htmlFor="nav-shaddow" className="options">
                 <li className="text">
                     <a htmlFor="nav-shaddow" className="normal-text" alt="informações" href="#informaçoes" onClick={() => {
-                        window.scrollTo(0, 650);
+                        window.scrollTo(0, 720);
                     }}>Informações</a>
                 </li>
                 <li className="text">
@@ -97,11 +97,11 @@ function Navbar() {
                 </li>
                 <li className="text">
                     <a className="normal-text" alt="contato" href="#contato" onClick={()=> {
-                        window.scrollTo(0, 3210);
+                        window.scrollTo(0, 3450);
                     }}>Contato</a>
                 </li>
                 {resp && (
-                <li className="text"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="normal-button">Ingresso</button></a></li>
+                <li className="text"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="normal-button">Inscreva-se</button></a></li>
                 )}
             </ul>
         </nav>
@@ -119,7 +119,7 @@ function Navbar() {
                     <a htmlFor="nav-toggle" href="#contato" className="link-to-contact" onClick={closeclick}><h3>Tire suas dúvidas conosco</h3></a>
                 </div>
                 {resp && (
-                <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="button-mobile">Ingresso</button></a></div>
+                <div className="text-mobile"><a href={resp[0]?.IngressoURL} target="_blank" rel="noopener noreferrer"><button className="button-mobile">Inscreva-se</button></a></div>
                 )}
                 <div className="painting" alt="imagem com duas pessoas coloridas"></div>
             </div>

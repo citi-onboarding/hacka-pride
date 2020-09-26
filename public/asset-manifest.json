@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4ce0a66.chunk.css",
-    "main.js": "/static/js/main.06fd746c.chunk.js",
-    "main.js.map": "/static/js/main.06fd746c.chunk.js.map",
+    "main.css": "/static/css/main.0386a9ce.chunk.css",
+    "main.js": "/static/js/main.7d5d670a.chunk.js",
+    "main.js.map": "/static/js/main.7d5d670a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
     "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
     "static/css/2.7ea1f6dd.chunk.css": "/static/css/2.7ea1f6dd.chunk.css",
-    "static/js/2.183706dd.chunk.js": "/static/js/2.183706dd.chunk.js",
-    "static/js/2.183706dd.chunk.js.map": "/static/js/2.183706dd.chunk.js.map",
+    "static/js/2.3559ecfd.chunk.js": "/static/js/2.3559ecfd.chunk.js",
+    "static/js/2.3559ecfd.chunk.js.map": "/static/js/2.3559ecfd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.651ce7c4364c98cc568b88f2340f9c17.js": "/precache-manifest.651ce7c4364c98cc568b88f2340f9c17.js",
+    "precache-manifest.b7832e9431d5370434cefbf6c139346e.js": "/precache-manifest.b7832e9431d5370434cefbf6c139346e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7ea1f6dd.chunk.css.map": "/static/css/2.7ea1f6dd.chunk.css.map",
-    "static/css/main.e4ce0a66.chunk.css.map": "/static/css/main.e4ce0a66.chunk.css.map",
-    "static/js/2.183706dd.chunk.js.LICENSE.txt": "/static/js/2.183706dd.chunk.js.LICENSE.txt",
+    "static/css/main.0386a9ce.chunk.css.map": "/static/css/main.0386a9ce.chunk.css.map",
+    "static/js/2.3559ecfd.chunk.js.LICENSE.txt": "/static/js/2.3559ecfd.chunk.js.LICENSE.txt",
     "static/media/Banner.css": "/static/media/people - Banner.71ebf69d.svg",
     "static/media/Information.css": "/static/media/localization.a45f2612.svg",
     "static/media/Partners.css": "/static/media/globe.53e06d19.svg",
     "static/media/Slider.css": "/static/media/prev.4a58318d.svg",
-    "static/media/Contact.css": "/static/media/Logo.3f04a5f0.svg",
-    "static/media/Navbar.css": "/static/media/LogoNav.bdc2921c.svg",
+    "static/media/Contact.css": "/static/media/Instagram.240e5e9d.svg",
+    "static/media/Navbar.css": "/static/media/logoo.b8c04411.svg",
     "static/media/Footer.css": "/static/media/heart.b13fed6d.svg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.09b85ec0.js",
     "static/css/2.7ea1f6dd.chunk.css",
-    "static/js/2.183706dd.chunk.js",
-    "static/css/main.e4ce0a66.chunk.css",
-    "static/js/main.06fd746c.chunk.js"
+    "static/js/2.3559ecfd.chunk.js",
+    "static/css/main.0386a9ce.chunk.css",
+    "static/js/main.7d5d670a.chunk.js"
   ]
 }
